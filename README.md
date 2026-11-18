@@ -4,16 +4,15 @@ Application-conditioned curation of retrieval-augmented generation (RAG) corpora
 
 You describe what your RAG system is for. PROSPECT turns that description into a literature search, triages the results by abstract, and then reads each paper's full text with a team of LLM agents to decide whether it belongs in your corpus. The result is a folder of kept PDFs, with a written justification for every keep and discard decision.
 
+![Where PROSPECT fits: the corpus is selected for the application before the retrieval pipeline](docs/figures/prospect_overview.png)
+
 This repository contains the method, and the code the paper used to evaluate it ([evaluation/](evaluation/README.md)). It contains no data, corpora or results.
 
-```
-Step 1 — Corpus discovery                      You                    Step 2 — Filtering
-───────────────────────────                    ───                    ──────────────────
-LLM conversation → intent brief                                       configuration pre-step (once per run)
-intent brief → Scopus Boolean queries          download the PDFs        criteria + rubrics, queries, anti-patterns
-Scopus retrieval → paper metadata      ──►     listed in        ──►   per-paper filtering (A3w by default)
-abstract triage → PASS / SKIP                  pdf_checklist.csv      keep / discard + reasoning
-```
+## How it works
+
+![PROSPECT pipeline: Step 1 corpus discovery and Step 2 multi-agent filtering](docs/figures/prospect_pipeline.png)
+
+Between the two steps you download the PDFs of the candidate papers (see [Quick start](#quick-start)).
 
 ## Install
 
@@ -77,6 +76,8 @@ In every case, Step 2 builds its filtering criteria from the same **intent brief
 ## Step 2 conditions
 
 PROSPECT's default filter is **A3w**. The other four conditions are the architectures compared in the paper's ablation. They are included so the comparison can be repeated.
+
+![The five Step 2 conditions: A1, A2, A3, A3w and A4](docs/figures/prospect_conditions.png)
 
 | Condition | What it does | LLM calls per paper (n = chunks) |
 |---|---|---|
