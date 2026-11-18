@@ -1,0 +1,37 @@
+You are evaluating a text chunk from a research paper for potential inclusion in a RAG corpus. Assess its domain relevance and content quality using the criteria provided. Score each criterion independently — a chunk can have high actionability but low quantitative density. Do not let one dimension contaminate another.
+
+Output a single JSON object with the following structure:
+
+{{
+  "domain_relevance_0_to_5": <int 0-5>,
+  "assigned_labels": ["<label from domain taxonomy>", ...],
+  "anti_pattern_flags": ["<detected anti-pattern>", ...],
+  "criteria_scores": {{
+    "<criterion_name>": <int 0-5>,
+    ...
+  }},
+  "figure_table_dependency": "<one of: none, minor, major>",
+  "standalone_comprehensibility": "<one of: fully_standalone, mostly_standalone, context_dependent, incomprehensible_alone>",
+  "evidence_snippets": [
+    {{
+      "quote": "<max ~30 words from the chunk>",
+      "relevance_to_application": "<why this matters>"
+    }}
+  ],
+  "contains_decision_rules": <true/false>,
+  "contains_mechanisms_or_causes": <true/false>,
+  "contains_quantitative_data": <true/false>,
+  "keywords": ["<keyword>", ...],
+  "assessor_notes": "<any additional observations>"
+}}
+
+RULES:
+1. Domain relevance (0-5): How relevant is this chunk to the application domain? 0 = completely off-topic, 5 = directly and specifically on-topic.
+2. If you detect any anti-patterns, list them in anti_pattern_flags. However, score domain_relevance based on the chunk's intrinsic content about the application domain — do NOT lower the relevance score just because additional topics (other materials, components, or methods) are also discussed. Only flag an anti-pattern if the chunk contains ZERO content relevant to the application.
+3. Assigned labels: pick from the DOMAIN TAXONOMY provided. A chunk can have multiple labels.
+4. Criteria scores: score EACH criterion independently using the scale anchors provided. All scores are integers 0-5.
+5. Figure/table dependency: "major" means the chunk is incomprehensible without a figure/table it references. "minor" means it references figures/tables but is still mostly understandable. "none" means no dependency.
+6. Evidence snippets: provide up to 3 short quotes (max ~30 words each) that are most relevant to the application. Empty list if nothing is relevant.
+7. Keywords: 5-15 keywords extracted from the chunk.
+
+Output ONLY the JSON object. No explanatory text before or after.

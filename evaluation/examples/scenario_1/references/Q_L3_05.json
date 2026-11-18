@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_05",
+  "layer": 3,
+  "query_text": "How does the source of post-consumer recycled PP such as packaging, automotive parts, or mixed consumer streams affect the consistency and mechanical properties of virgin-recycled PP blends?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The source of post-consumer recycled polypropylene (rPP) significantly impacts the consistency and mechanical properties of virgin-recycled PP blends due to variations in degradation history, polymer grades, and contamination levels. \n\nPost-consumer rPP recovered from packaging and containers is typically a heterogeneous mixture containing varying grades of PP (including both homopolymers and copolymers), stabilizers, and polyethylene (PE) impurities [Paper12, Paper175]. Packaging materials, such as microwavable containers, undergo thermo-mechanical, thermo-oxidative, and shear-induced degradation during their service life, which decreases their molecular weight and deteriorates mechanical properties [Paper226]. Similarly, rPP sourced from mixed municipal solid waste (MSW), such as household device shells or decentralized collection systems, introduces a wide array of contaminants, including legacy fillers (e.g., calcium carbonate) and foreign polymers like polyamides and PE [Paper12, Paper163, Paper223]. Other specific sources, such as raffia, introduce their own distinct fillers and additives [Paper56].\n\nThis variability in feedstock composition directly affects the consistency of virgin-recycled blends. The diversity of sources and inconsistent sorting lead to unknown levels of contamination, which introduces uncertainty, limits the reproducibility of results, and makes it challenging to establish reliable structure–property relationships [Paper12, Paper202]. The amount, size, and distribution of these contaminants vary significantly among different commercial suppliers [Paper223].\n\nMechanically, the presence of residual additives, inorganic fillers, and polymeric contaminants alters the blend's crystallinity, density, and phase morphology, which subsequently influences stress distribution and failure mechanisms [Paper12]. A primary issue is polyolefin cross-contamination, particularly PE impurities in rPP. Because PP and PE are immiscible, their copresence promotes phase separation and suboptimal mechanical performance, notably reducing impact strength and ductility [Paper202, Paper223]. Furthermore, the complex mixture of different PP qualities and PE impurities in post-consumer containers can inhibit potential mechanical improvements, even when impact modifiers (such as ethylene-octene rubber elastomers) or compatibilisers are added [Paper175]. Contaminants from MSW have also been shown to increase the overall density of the recycled plastics [Paper163]. \n\nWhile the provided excerpts detail the effects of packaging and mixed consumer streams, they do not contain information regarding rPP sourced specifically from automotive parts. To fully answer the query, additional data characterizing the specific contaminant profiles, additive packages, and degradation histories of automotive-sourced rPP would be required.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper175_10_1016_j_wasman_2007_10_021",
+    "Paper202_10_1002_pen_70353",
+    "Paper226_10_1016_j_fpsl_2019_01_002",
+    "Paper207_10_3390_polym16223169",
+    "Paper12_10_3390_polym17111556",
+    "Paper223_10_3390_polym13101574",
+    "Paper106_10_1002_app_20357",
+    "Paper121_10_1080_15376494_2024_2438902",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper223_10_3390_polym13101574",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper12_10_3390_polym17111556",
+    "Paper163_10_1016_j_matdes_2014_05_013",
+    "Paper127_10_1002_pc_27663"
+  ]
+}

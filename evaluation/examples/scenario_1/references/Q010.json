@@ -1,0 +1,31 @@
+{
+  "query_id": "Q010",
+  "layer": 1,
+  "query_text": "How does the molecular weight distribution of PP blend components influence the resulting mechanical performance?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The molecular weight (MW) of polypropylene (PP) blend components significantly dictates the resulting mechanical performance, primarily governing the balance between stiffness, toughness, and processability. Higher molecular weight generally enhances mechanical properties; for instance, increasing the matrix MW in PP blends greatly improves Young's modulus, tensile strength, and impact toughness [Paper32]. Ultra-high molecular weight PP (UHMWPP) exhibits superior mechanical strength, though its high chain entanglement and melt viscosity result in poor processability [Paper43]. \n\nIn the context of recycled components, the degradation of polymer chains during the recycling process leads to a lower molecular weight, which directly reduces material stiffness. Utilizing 100% recycled PP can result in a 29% decline in elastic modulus compared to virgin PP [Paper12]. Furthermore, the molecular weight distribution and contaminant levels in recycled PP blends are key factors in determining long-term durability, specifically influencing impact resistance and slow crack growth (SCG) performance [Paper12].\n\nWhen modifying PP, the molecular length and size of added copolymers play an important role in improving overall mechanical properties [Paper38]. For example, the molecular weight of atactic PP determines whether it behaves as a viscous solid or an elastomer, which affects its potential to toughen polymer blends [Paper81]. \n\nBecause increasing MW to improve strength inherently lowers melt flowability, formulators must manage trade-offs. Strategies include blending UHMWPP with low molecular weight PP (LMWPP) to improve processability while altering mechanical properties [Paper43], or compensating for the loss of toughness and stiffness in low-MW PP blends by slightly reducing the matrix crystallinity [Paper32].\n\nWhile the provided excerpts establish the general relationship between average molecular weight and mechanical strength, they do not contain sufficient information to fully detail how specific molecular weight distributions (e.g., narrow versus broad distributions or specific polydispersity indices) quantitatively affect the exact target metrics in complex ternary blends. Additional empirical data correlating specific molecular weight distribution profiles with impact strength, melt flow rate, and tensile strength in blends of virgin homopolymer, virgin impact copolymer, and post-consumer recycled PP would be required to fully answer the query.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper38_10_1002_app_52691",
+    "Paper12_10_3390_polym17111556",
+    "Paper32_10_1016_j_polymer_2023_125863",
+    "Paper38_10_1002_app_52691",
+    "Paper66_10_3390_app7121254",
+    "Paper43_10_1080_00222348_2022_2152158",
+    "Paper8_10_1007_s13726-024-01439-x",
+    "Paper43_10_1080_00222348_2022_2152158",
+    "Paper38_10_1002_app_52691",
+    "Paper66_10_3390_app7121254",
+    "Paper12_10_3390_polym17111556",
+    "Paper32_10_1016_j_polymer_2023_125863",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper81_10_1021_sc400140y",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper99_10_1002_app_24156",
+    "Paper81_10_1021_sc400140y"
+  ]
+}

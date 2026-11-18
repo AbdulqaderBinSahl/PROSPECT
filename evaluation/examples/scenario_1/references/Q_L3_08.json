@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_08",
+  "layer": 3,
+  "query_text": "What effect does the ratio of virgin impact copolymer to virgin homopolymer PP have on the stiffness-toughness balance when a fixed proportion of post-consumer recycled PP is present in the blend?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The provided excerpts do not contain sufficient information to fully answer the query. Specifically, there is no data detailing how adjusting the exact ratio of virgin impact copolymer to virgin homopolymer PP affects the stiffness-toughness balance in a blend containing a fixed proportion of post-consumer recycled PP (PCR-PP).\n\nThe retrieved literature does discuss the individual components and related binary or modified blends. Virgin homopolymer PP is known to have poor toughness and brittle behavior, which is typically ameliorated by adding copolymers [Paper38]. However, conventional soft modifiers often improve toughness at the cost of material stiffness and rigidity [Paper44]. Impact polypropylene copolymer (IPC) is explicitly noted for possessing an excellent stiffness-toughness balance. When used as a modifier in a recycled polyolefin blend (specifically an 80/20 rHDPE/rPP blend), IPC was shown to simultaneously improve stiffness, strength, and impact toughness without the typical loss of rigidity [Paper44]. \n\nAdditionally, the blending of virgin homopolymer PP (vPP) with recycled PP (rPP) has been studied, with findings indicating that a 75:25 vPP/rPP ratio offers a favorable balance between mechanical performance and processability, yielding tensile strength and modulus values comparable to pure PP [Paper12]. \n\nWhile these findings establish that IPC can improve the stiffness-toughness balance of recycled plastics [Paper44] and that virgin homopolymer PP can be successfully blended with PCR-PP [Paper12], none of the excerpts evaluate a ternary system where the ratio of virgin impact copolymer to virgin homopolymer is varied against a constant PCR-PP baseline. \n\nTo fully address the query, additional experimental data or literature is required. Specifically, studies are needed that formulate blends with a fixed weight percentage of PCR-PP while systematically varying the ratio of virgin homopolymer PP to virgin impact copolymer PP. Mechanical testing data from these specific formulations—particularly tensile or flexural modulus (to measure stiffness) and Charpy or Izod impact strength (to measure toughness)—would be necessary to determine the precise effect of this ratio on the stiffness-toughness balance.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper44_10_1002_pi_6268",
+    "Paper12_10_3390_polym17111556",
+    "Paper44_10_1002_pi_6268",
+    "Paper12_10_3390_polym17111556",
+    "Paper38_10_1002_app_52691",
+    "Paper12_10_3390_polym17111556",
+    "Paper88_10_1002_app_33706",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper127_10_1002_pc_27663",
+    "Paper66_10_3390_app7121254",
+    "Paper48_10_3390_polym13071137",
+    "Paper223_10_3390_polym13101574",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper38_10_1002_app_52691",
+    "Paper12_10_3390_polym17111556",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper84_10_1007_s00289-012-0880-1",
+    "Paper44_10_1002_pi_6268",
+    "Paper106_10_1002_app_20357"
+  ]
+}

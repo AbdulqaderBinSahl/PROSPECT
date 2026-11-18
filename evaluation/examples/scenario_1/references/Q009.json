@@ -1,0 +1,31 @@
+{
+  "query_id": "Q009",
+  "layer": 1,
+  "query_text": "What composition-property datasets are available for multi-component polypropylene blend systems?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Based on the retrieved excerpts, several composition-property datasets are available for multi-component polypropylene (PP) blend systems, primarily focusing on binary and ternary blends with polyethylene (PE), elastomers, and various fillers.\n\n**PP/PE and Recycled Blends:**\nExtensive datasets exist for PP/PE binary systems, covering thermal properties (DSC, TGA), crystallinity, and density [Paper89]. Specific compositional data includes melt flow index (MFI) and melt density for conventional PP/mLLDPE blends across weight ratios ranging from 100/0 to 0/100 [Paper119]. For recycled materials, datasets include rheometric and DSC measurements for custom PP-LLDPE blends and PP post-consumer recyclates containing 1–30 wt% LLDPE [Paper207]. Additionally, an optimized recycled PP/PE blend dataset reports tensile strength, flexural strength, density, and MFI when using dicumyl peroxide (DCP) and acrylamide (AcAm) as crosslinking and compatibilizing agents [Paper3].\n\n**PP Blends with Elastomers and Impact Modifiers:**\nDatasets are available for PP blended with various elastomers to improve toughness. These include storage and loss modulus data for ternary PP/POE/HDPE blends at specific ratios (e.g., 85/15/0, 80/15/5, 70/15/15) [Paper88]. Other datasets cover the thermal properties and water absorption of PP modified with POE-g-MAH [Paper86], as well as the mechanical and morphological properties of PP/EPDM [Paper36, Paper82] and PP/SEBS composites [Paper103]. \n\n**PP Blends with Fillers and Compatibilizers:**\nComposition-property relationships are documented for PP/talc/SEBS composites [Paper103] and PP/organoclay nanocomposites [Paper82, Paper84]. Furthermore, datasets explore the phase structure and morphology of PP blended with polar materials like polyamide (PA) and talc using oxidized PP (OPP) as a compatibilizer [Paper105].\n\n**Other PP Systems:**\nAdditional datasets cover blends of ultra-high molecular weight PP (UHMWPP) and low molecular weight PP (LMWPP) detailing viscosity and MFR [Paper43], as well as the rheological and crystallization behavior of high-melt-strength PP (HMSPP) blended with PPB and PPR [Paper83].\n\n**Missing Information:**\nWhile the excerpts identify numerous studies on PP blends, they do not provide a comprehensive, raw numerical dataset specifically mapping the ternary blending of virgin impact copolymer PP, virgin homopolymer PP, and post-consumer recycled PP (PCR-PP). To fully support an advisory system predicting optimal formulations, additional quantitative datasets are needed. These datasets must explicitly correlate the exact blend ratios of these three specific PP grades with resulting impact strength, MFR, and tensile strength, as well as the precise dosage effects of required additives (impact modifiers, compatibilisers, stabilisers, and fillers) on target mechanical performance.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper43_10_1080_00222348_2022_2152158",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper88_10_1002_app_33706",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper86_10_1002_pc_21223",
+    "Paper105_10_1002_app_20207",
+    "Paper207_10_3390_polym16223169",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper84_10_1007_s00289-012-0880-1",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper207_10_3390_polym16223169",
+    "Paper82_10_1016_j_matchemphys_2013_01_060",
+    "Paper32_10_1016_j_polymer_2023_125863",
+    "Paper134_10_1002_pen_26689",
+    "Paper38_10_1002_app_52691",
+    "Paper83_10_1177_026248931303200301",
+    "Paper103_10_1016_j_compositesa_2005_01_011",
+    "Paper62_10_1016_j_addma_2018_11_009"
+  ]
+}

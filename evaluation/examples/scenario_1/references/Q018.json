@@ -1,0 +1,31 @@
+{
+  "query_id": "Q018",
+  "layer": 1,
+  "query_text": "How do mineral fillers and reinforcements (talc, calcium carbonate, glass fibre) affect the stiffness-toughness balance in PP compounds?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Mineral fillers and reinforcements significantly alter the stiffness-toughness balance in polypropylene (PP) compounds, generally increasing stiffness (modulus and strength) while often compromising toughness (impact strength and elongation) at higher loadings. The specific effects depend heavily on the filler type, concentration, and particle size.\n\n**Calcium Carbonate (CaCO3):** At low concentrations (typically 2% to 15% wt%), CaCO3 can simultaneously improve flexural strength, tensile strength, and impact toughness [Paper58, Paper128, Paper133, Paper197]. This initial toughening effect is attributed to CaCO3 promoting nucleation and crystallisation [Paper133], as well as acting as stress concentration sites that trigger cavitation and mass plastic deformation at the particle-polymer interface [Paper100, Paper172]. Particle size is critical; for instance, 0.7 µm particles provide optimal reinforcement, whereas larger particles or smaller aggregated particles induce brittle fracture [Paper172]. When CaCO3 loadings exceed 15–20%, particle agglomeration impedes uniform dispersion, leading to a steep decline in impact strength, flexural strength, and elongation [Paper58, Paper128, Paper133, Paper197].\n\n**Talc:** The incorporation of talc increases the tensile strength and overall mechanical stiffness of the PP matrix due to the spatial configuration and crystal-like lattice of the microparticles [Paper174]. However, talc concurrently increases brittleness and reduces fracture toughness. This reduction is attributed to high stress concentrations at the sharp edges of the talc plates [Paper174]. High loadings, such as 40% talc, cause a notable decline in impact performance [Paper195].\n\n**Glass Fibre (GF):** Glass fibre provides substantial property enhancement and reinforcement at moderate loadings (e.g., 15%) [Paper128]. Similar to talc, the addition of glass fibres (e.g., at 20% loading) can induce brittleness and decrease the impact strength of virgin PP composites [Paper195]. Loadings around 30% approach the upper practical limit for processing, beyond which excessive melt viscosity and fibre attrition occur [Paper128].\n\n**Balancing the Properties:** Because rigid fillers like talc and glass fibre inherently cause brittleness, elastomers or rubbers (such as SBS or POE) are frequently added to the compound to restore impact toughness, creating a synergistic toughening mechanism [Paper88, Paper100, Paper195]. \n\nFurthermore, when formulating with post-consumer recycled PP (rPP), the addition of fillers may fail to improve impact strength due to pre-existing contaminants, residual fillers from the material's first life cycle, and complex interfacial interactions [Paper195].",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper58_10_1088_1757-899X_500_1_012034",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper100_10_1002_pen_20480",
+    "Paper172_10_1002_pen_21716",
+    "Paper103_10_1016_j_compositesa_2005_01_011",
+    "Paper73_10_1007_s00289-015-1491-4",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper195_10_1016_j_jclepro_2015_12_062",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper100_10_1002_pen_20480",
+    "Paper128_10_1016_j_istruc_2025_110571",
+    "Paper45_10_3390_jcs5110302",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper88_10_1002_app_33706",
+    "Paper174_10_1002_app_28797",
+    "Paper133_10_1016_j_rinma_2024_100562",
+    "Paper58_10_1088_1757-899X_500_1_012034"
+  ]
+}

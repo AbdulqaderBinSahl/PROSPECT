@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_04",
+  "layer": 3,
+  "query_text": "How does the degree of thermal-oxidative degradation in post-consumer recycled PP affect the mechanical properties of virgin-recycled PP blends, and what characterisation methods are used to assess it?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Thermal-oxidative degradation in post-consumer recycled polypropylene (PCR-PP) primarily occurs through chain scission and the formation of oxidation-prone functional groups, such as radicals, hydroperoxides, and carbonyls [Paper12, Paper106, Paper201]. \n\nWhen blended with virgin PP, this degradation negatively impacts the mechanical performance of the resulting compound. The reactive radicals and hydroperoxides present in the recycled material can induce degradation in the virgin polymer chains, causing the blend's tensile strength retention to fall 5–10% below theoretical additive models [Paper106]. Macroscopically, the reduction in molecular weight from chain scission reduces the material's ability to undergo plastic deformation, leading to a progressive loss of ductility, stiffness, and elongation at break [Paper12, Paper201, Paper226]. For example, unblended PCR-PP can suffer severe embrittlement, exhibiting up to an 85% reduction in elongation at break and a 63% reduction in break strength [Paper12]. However, at lower incorporation levels (e.g., 25% PCR-PP), the negative effects are mitigated, and the blend can maintain a favourable balance of properties, including comparable elastic modulus and slightly improved yield strength [Paper12].\n\nTo assess the extent of thermal-oxidative degradation and its effects, several characterisation methods are utilised:\n\n* **Fourier Transform Infrared Spectroscopy (FTIR):** Identifies the oxidation state by detecting functional groups formed during degradation, notably carbonyl (C=O) vibrations at 1730 cm⁻¹ (indicating saturated aldehydes) and alcoholic/phenolic C–O bonds [Paper56, Paper85].\n* **Oxidation Induction Time (OIT):** Quantifies oxidative resistance, which shows a significant and clear decline as the proportion of degraded recycled PP increases in a blend [Paper12].\n* **Thermogravimetric Analysis (TGA):** Evaluates thermal stability and decomposition temperature ranges, though testing under inert conditions may not fully reflect oxidative stability [Paper12, Paper85].\n* **Melt Flow Index (MFI), Rheometry, and Gel Permeation Chromatography (GPC):** Track the reduction in average molecular weight resulting from chain scission. Degraded PP exhibits increased flowability (higher MFI) and reduced viscosity [Paper85, Paper226].\n* **Tensile Testing:** Directly measures the macroscopic deterioration of mechanical properties, such as yield stress, tensile strength, and elongation at break [Paper12, Paper226].",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper207_10_3390_polym16223169",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper106_10_1002_app_20357",
+    "Paper152_10_3390_recycling4030033",
+    "Paper223_10_3390_polym13101574",
+    "Paper226_10_1016_j_fpsl_2019_01_002",
+    "Paper152_10_3390_recycling4030033",
+    "Paper219_10_3390_polym14245438",
+    "Paper152_10_3390_recycling4030033",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper226_10_1016_j_fpsl_2019_01_002",
+    "Paper226_10_1016_j_fpsl_2019_01_002",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005"
+  ]
+}

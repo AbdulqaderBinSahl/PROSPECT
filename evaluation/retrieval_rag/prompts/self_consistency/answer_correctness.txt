@@ -1,0 +1,33 @@
+Your task is to judge how factually accurate a generated answer is when compared to a reference
+(ground-truth) answer to the same question.
+
+You will be given the original question, a reference answer prepared by an expert, and a generated
+answer produced by an AI system. Evaluate on two components:
+
+Component 1 — Factual overlap (weight 0.75):
+  Identify factual claims in the generated answer. For each, decide whether it matches, partially
+  matches, or conflicts with the reference answer. Score = (matching + 0.5 × partial) ÷ total claims.
+
+Component 2 — Semantic similarity (weight 0.25):
+  On a 0–1 scale, how similar is the overall meaning and coverage of the generated answer to the
+  reference? Consider topic coverage, emphasis, and conclusions.
+
+Combined score = 0.75 × factual_overlap + 0.25 × semantic_similarity
+
+QUESTION:
+{question}
+
+REFERENCE ANSWER:
+{ground_truth}
+
+GENERATED ANSWER:
+{answer}
+
+Return your result as JSON with no additional text:
+{{
+  "score": <float 0.0–1.0>,
+  "factual_overlap": <float 0.0–1.0>,
+  "semantic_similarity": <float 0.0–1.0>,
+  "key_discrepancies": ["<discrepancy 1>", "<discrepancy 2>"],
+  "reasoning": "<one short paragraph>"
+}}

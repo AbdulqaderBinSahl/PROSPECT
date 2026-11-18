@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_02",
+  "layer": 3,
+  "query_text": "What dispersed rubber phase particle size range is optimal for effective toughening in PP blends, and how does particle size distribution shift as post-consumer recycled PP content increases?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The optimal dispersed rubber phase particle size for effective toughening in polypropylene (PP) blends is generally in the submicron range [Paper96]. Specifically, for pseudoductile polymers, the optimum rubber particle size is reported to be between 0.1 and 0.5 µm [Paper113]. Another study highlights an ideal weight-average diameter of 0.2 to 0.4 µm, which favors cavitation during impact [Paper72]. While one source broadly places the optimum size for rubber-toughened thermoplastics around one micrometer [Paper93], maintaining a small particle size is critical. A large number of small rubber particles more efficiently promotes energy dissipation mechanisms, such as shear yielding and crazing throughout the matrix [Paper96]. \n\nRegarding how the particle size distribution shifts as post-consumer recycled PP (PCR-PP) content increases, the provided excerpts do not contain sufficient information to fully answer the query. The retrieved texts note that recycled PP often contains unknown levels of polyethylene contamination that promote phase separation [Paper202]. Additionally, one study observes that a lower-viscosity recycled PP matrix can lead to better dispersion and distribution of particles compared to a higher-viscosity virgin PP matrix [Paper172]. However, the excerpts lack specific data on how the dispersed rubber phase size distribution quantitatively or qualitatively shifts as the ratio of PCR-PP increases. \n\nTo fully address this aspect of the query, additional experimental data would be needed. Specifically, morphological studies—such as scanning electron microscopy (SEM) analyses—measuring the dispersed rubber domain sizes, particle size distributions, and interparticle distances across a controlled series of blends with incrementally increasing PCR-PP content are required to determine how the recycled matrix influences rubber phase morphology.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper93_10_1177_147776060902500402",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper113_10_1002_app_10917",
+    "Paper172_10_1002_pen_21716",
+    "Paper202_10_1002_pen_70353",
+    "Paper113_10_1002_app_10917",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper96_10_1002_pen_21089",
+    "Paper113_10_1002_app_10917",
+    "Paper32_10_1016_j_polymer_2023_125863",
+    "Paper72_10_1002_pen_24267",
+    "Paper101_10_1002_app_24257",
+    "Paper12_10_3390_polym17111556",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper172_10_1002_pen_21716",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper101_10_1002_app_24257",
+    "Paper88_10_1002_app_33706",
+    "Paper12_10_3390_polym17111556",
+    "Paper127_10_1002_pc_27663"
+  ]
+}

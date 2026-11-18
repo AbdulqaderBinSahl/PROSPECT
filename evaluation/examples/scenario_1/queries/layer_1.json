@@ -1,0 +1,194 @@
+[
+  {
+    "query_id": "Q001",
+    "text": "How does the impact strength of polypropylene blends change with increasing recycled PP content?",
+    "source": "operational_config.representative_queries[0]",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q002",
+    "text": "What tensile properties (strength, modulus, elongation) are reported for blends of virgin and recycled polypropylene at different mixing ratios?",
+    "source": "operational_config.representative_queries[1]",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q003",
+    "text": "How does melt flow rate vary across different polypropylene blend compositions?",
+    "source": "operational_config.representative_queries[2]",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q004",
+    "text": "What trade-offs exist between impact resistance and stiffness in polypropylene blends?",
+    "source": "operational_config.representative_queries[3]",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q005",
+    "text": "How do the mechanical properties of impact copolymer PP compare to those of homopolymer PP in blend systems?",
+    "source": "operational_config.representative_queries[4]",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q006",
+    "text": "What experimental data link polypropylene blend composition to notched impact strength measurements?",
+    "source": "operational_config.representative_queries[5]",
+    "knowledge_axis": "impact_strength",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q007",
+    "text": "How does blend morphology (dispersed phase size, crystalline structure) correlate with the mechanical properties of PP blends?",
+    "source": "operational_config.representative_queries[6]",
+    "knowledge_axis": "morphology",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q008",
+    "text": "How do the properties of virgin-recycled PP blends compare to those of pure virgin polypropylene?",
+    "source": "operational_config.representative_queries[7]",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q009",
+    "text": "What composition-property datasets are available for multi-component polypropylene blend systems?",
+    "source": "operational_config.representative_queries[8]",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q010",
+    "text": "How does the molecular weight distribution of PP blend components influence the resulting mechanical performance?",
+    "source": "operational_config.representative_queries[9]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q011",
+    "text": "How does increasing the homopolymer fraction in a blend with impact copolymer PP affect stiffness and processability?",
+    "source": "operational_config.representative_queries[10]",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q012",
+    "text": "How does the ethylene content or comonomer type in PP copolymers influence blend toughness and flexibility?",
+    "source": "operational_config.representative_queries[11]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q013",
+    "text": "At what recycled PP content levels do blend mechanical properties begin to degrade, and which properties are most sensitive?",
+    "source": "operational_config.representative_queries[12]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q014",
+    "text": "What quantitative models or empirical correlations have been developed to predict PP blend properties from component characteristics?",
+    "source": "operational_config.representative_queries[13]",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q015",
+    "text": "How do multiple reprocessing cycles affect the molecular weight, crystallinity, and mechanical properties of polypropylene?",
+    "source": "operational_config.representative_queries[14]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q016",
+    "text": "How do elastomeric impact modifiers (such as EPDM, POE, or SEBS) affect the toughness and ductility of polypropylene compounds?",
+    "source": "operational_config.representative_queries[15]",
+    "knowledge_axis": "additives_impact_modifiers",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q017",
+    "text": "What role do compatibilisers play in improving the interfacial adhesion and mechanical properties of immiscible polypropylene blends?",
+    "source": "operational_config.representative_queries[16]",
+    "knowledge_axis": "additives_impact_modifiers",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q018",
+    "text": "How do mineral fillers and reinforcements (talc, calcium carbonate, glass fibre) affect the stiffness-toughness balance in PP compounds?",
+    "source": "operational_config.representative_queries[17]",
+    "knowledge_axis": "additives_impact_modifiers",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q019",
+    "text": "How do antioxidant and thermal stabiliser systems protect the properties of recycled polypropylene during reprocessing?",
+    "source": "operational_config.representative_queries[18]",
+    "knowledge_axis": "stabilisers_processing",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q020",
+    "text": "What baseline mechanical and rheological properties do commercial polypropylene grades (impact copolymer, homopolymer) typically exhibit?",
+    "source": "operational_config.representative_queries[19]",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q021",
+    "text": "How does contamination from polyethylene or other polymers in post-consumer recycled PP streams affect blend properties?",
+    "source": "operational_config.representative_queries[20]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q022",
+    "text": "What variability in mechanical properties is observed across different sources or batches of post-consumer recycled polypropylene?",
+    "source": "operational_config.representative_queries[21]",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q023",
+    "text": "How do processing conditions (temperature, shear rate, cooling rate) influence the morphology and mechanical properties of PP blends?",
+    "source": "operational_config.representative_queries[22]",
+    "knowledge_axis": "stabilisers_processing",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  },
+  {
+    "query_id": "Q024",
+    "text": "What mechanical performance requirements must polypropylene compounds meet for automotive interior and exterior applications?",
+    "source": "operational_config.representative_queries[23]",
+    "knowledge_axis": "automotive_requirements",
+    "authored_before": "2026-05-17T10:40:20.533951+00:00",
+    "layer": 1
+  }
+]

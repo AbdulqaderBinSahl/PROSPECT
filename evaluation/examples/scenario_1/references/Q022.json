@@ -1,0 +1,31 @@
+{
+  "query_id": "Q022",
+  "layer": 1,
+  "query_text": "What variability in mechanical properties is observed across different sources or batches of post-consumer recycled polypropylene?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Post-consumer recycled polypropylene (PCR-PP) exhibits significant variability in its mechanical properties, primarily due to its nature as a heterogeneous mixture whose characteristics depend heavily on the origin of the waste deposits and prior processing history [Paper12, Paper144]. The literature indicates that the properties of recyclates cannot be directly correlated with the original virgin polymers or specific recycling parameters, resulting in a broad distribution of mechanical values across different sources [Paper146]. Generally, PCR-PP demonstrates stiffer and more brittle behavior, with reduced elongation at break and lower impact strength compared to virgin PP [Paper146].\n\nA primary driver of this variability is the inconsistent composition of PCR-PP, which frequently contains varying grades of PP, residual additives, and contaminants such as polyethylene, polyamides, and inorganic fillers like calcium carbonate [Paper12, Paper175, Paper223]. The overall amount, size, and distribution of these contaminants vary significantly among different suppliers [Paper223]. These impurities alter the material's crystallinity, density, and phase morphology, which subsequently influence stress distribution and failure mechanisms [Paper12, Paper134]. For instance, polyethylene contamination significantly reduces the ability of PP to form β crystals [Paper134], and the presence of multiple incompatible polymer qualities can prevent reproducible mechanical improvements when impact modifiers or fillers are added [Paper175]. Furthermore, contaminants and additives have been shown to impact mechanical properties more significantly than the melt flow index (MFI) [Paper144].\n\nDespite the inherent variability of the waste stream, some research suggests that consistent processing—specifically through homogenization and the controlled addition of additives by suppliers—can produce repeatable mechanical characteristics. In one study, the dispersion of identified mechanical properties (excluding break properties) was kept below 5% of their average values despite different waste origins [Paper144]. \n\nWhile the provided excerpts establish the causes and general effects of PCR-PP variability, they lack specific statistical data regarding batch-to-batch variance from individual suppliers over time. Additional quantitative data detailing the exact statistical ranges of mechanical properties across consecutive batches, as well as precise correlations between specific contaminant concentrations and mechanical degradation, would be required to fully model and predict this variability in a formulation advisory system.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper134_10_1002_pen_26689",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper12_10_3390_polym17111556",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper164_10_1678_rheology_41_173",
+    "Paper12_10_3390_polym17111556",
+    "Paper175_10_1016_j_wasman_2007_10_021",
+    "Paper12_10_3390_polym17111556",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper152_10_3390_recycling4030033",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper12_10_3390_polym17111556",
+    "Paper121_10_1080_15376494_2024_2438902",
+    "Paper223_10_3390_polym13101574",
+    "Paper12_10_3390_polym17111556",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper146_10_3390_recycling6040076",
+    "Paper171_10_1080_03602559_2011_557823"
+  ]
+}

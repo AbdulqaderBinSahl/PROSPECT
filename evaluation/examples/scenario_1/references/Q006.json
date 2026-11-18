@@ -1,0 +1,31 @@
+{
+  "query_id": "Q006",
+  "layer": 1,
+  "query_text": "What experimental data link polypropylene blend composition to notched impact strength measurements?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Experimental data demonstrate that the notched impact strength of polypropylene (PP) blends is highly dependent on the ratio of homopolymers to copolymers, the presence of recycled materials, and the inclusion of specific additives.\n\nRegarding virgin PP blends, mixing impact copolymer PP (ICP) with certain PP homopolymers can negatively affect impact strength [Paper16]. However, incorporating copolymerized PP into isotactic PP (iPP) generally improves impact resistance [Paper87]. Furthermore, blending modified impact-resistant PP (MPP) with 10 wt% thermoplastic polyurethane (TPU) yields higher impact strength than equivalent homopolymer PP/TPU blends [Paper66].\n\nWhen blending PP with polyethylene (PE)—a common scenario in post-consumer recycled (PCR) streams—impact strength is largely dictated by the less brittle PE phase. A continuous PP phase severely reduces toughness, whereas PP dispersed as droplets in a PE matrix maintains the impact strength of the PE [Paper50]. In recycled blends, an unmodified 80/20 rHDPE/rPP mixture exhibits lower impact resistance (65 J/m) than neat rHDPE (85 J/m) due to poor interfacial adhesion. The gradual addition of an IPC compatibilizer steadily increases this impact resistance [Paper44]. In virgin systems, a 60% HDPE/40% i-PP blend doubles the impact strength of neat i-PP, and adding an ethylene-propylene copolymer compatibilizer can increase the impact strength fivefold [Paper89].\n\nElastomeric impact modifiers significantly enhance PP toughness, provided phase separation is controlled. Adding ethylene-octene copolymer (EOC) to PP increases impact strength up to a peak at 20 phr; above this concentration, gross phase separation causes a significant decrease in toughness [Paper96]. Reactive blending of PP and EOC with acrylates can yield impact strengths over 12 times that of pure PP [Paper96]. Similarly, a blend containing 14 wt% EPDM rubber and a PP-g-AA compatibilizer achieves a notched impact strength approximately 25 times that of pure PP by suppressing droplet coalescence [Paper101]. Additionally, specific beta-nucleating agents can double the impact strength of linear PP [Paper21].\n\nWhile the provided excerpts detail the effects of binary blending and specific additives, they lack experimental data on ternary blends combining virgin impact copolymer PP, virgin homopolymer PP, and PCR-PP simultaneously. To fully optimize the target formulations for the advisory system, additional experimental data mapping the impact strength across varying ratios of these three specific components, along with their response to varying PCR-PP degradation levels, would be required.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper101_10_1002_app_24257",
+    "Paper44_10_1002_pi_6268",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper66_10_3390_app7121254",
+    "Paper60_10_1016_j_polymer_2018_12_011",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper50_10_1016_j_polymer_2020_122795",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper50_10_1016_j_polymer_2020_122795",
+    "Paper86_10_1002_pc_21223",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper66_10_3390_app7121254",
+    "Paper96_10_1002_pen_21089",
+    "Paper96_10_1002_pen_21089",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper84_10_1007_s00289-012-0880-1",
+    "Paper111_10_1016_S0167-577X_02_01367-8",
+    "Paper21_10_1007_s10118-024-3234-1",
+    "Paper16_10_1007_s00289-024-05454-z"
+  ]
+}

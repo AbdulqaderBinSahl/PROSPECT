@@ -1,0 +1,31 @@
+{
+  "query_id": "Q007",
+  "layer": 1,
+  "query_text": "How does blend morphology (dispersed phase size, crystalline structure) correlate with the mechanical properties of PP blends?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The correlation between blend morphology and the mechanical properties of polypropylene (PP) blends depends heavily on the size and shape of the dispersed phase, the crystalline structure, and interfacial adhesion.\n\nRegarding dispersed phase size and shape, smaller and better-dispersed domains generally indicate higher compatibility and lead to improved mechanical performance. For example, in PP-r-EP/EVA blends, smaller dispersed domains and morphological transitions from spherical to elongated and fibroid structures enhanced impact strength and elongation at break [Paper91]. Conversely, in PP/HDPE blends, an increase in the size of dispersed HDPE domains due to coalescence, or the formation of a co-continuous morphology in incompatible systems, resulted in minimum values for mechanical properties [Paper89]. Similarly, standard droplet morphologies in PP/LDPE blends yielded lower tensile strength, modulus, and impact toughness compared to novel morphologies generated via chaotic advection [Paper95].\n\nCrystalline structure also dictates mechanical behavior, as polymer crystals are stiffer and stronger than amorphous regions [Paper89]. Blending typically alters PP crystallization; for instance, adding LDPE inhibits PP spherulite growth, leading to deformed and smaller spherulites [Paper95], while blending high-melt-strength PP with PPB reduces spherulite size from 30–40 μm to less than 10 μm [Paper83]. However, the overall level of crystallinity does not always correlate directly with mechanical strength. In hcr PP/mLLDPE blends, variations in Young's modulus and impact strength showed no correlation with the level of crystallinity, suggesting that other factors, such as the reinforcing effect of nucleating agents, may drive mechanical improvements [Paper119]. \n\nFurthermore, the morphology at the interface is critical. The presence of compatibilizers (such as POE-g-MA) at the interface between the PP matrix and a dispersed phase enhances interfacial interactions, which can significantly increase impact strength and elongation at break [Paper1]. \n\nWhile the provided excerpts detail the morphological effects in PP blended with elastomers, LDPE, HDPE, and atactic PP, they lack specific information regarding the exact materials required by the application context: blends composed of virgin impact copolymer PP, virgin homopolymer PP, and post-consumer recycled PP (PCR-PP). To fully answer how morphology affects the specific formulations targeted by the advisory system, additional data characterizing the phase separation, dispersed phase size, and crystallization kinetics specifically for virgin/PCR-PP blends would be required.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper81_10_1021_sc400140y",
+    "Paper83_10_1177_026248931303200301",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper38_10_1002_app_52691",
+    "Paper95_10_1002_masy_200850316",
+    "Paper66_10_3390_app7121254",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper60_10_1016_j_polymer_2018_12_011",
+    "Paper83_10_1177_026248931303200301",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper91_10_1002_app_29827",
+    "Paper1_10_1016_j_reactfunctpolym_2026_106653",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper66_10_3390_app7121254",
+    "Paper72_10_1002_pen_24267",
+    "Paper81_10_1021_sc400140y",
+    "Paper1_10_1016_j_reactfunctpolym_2026_106653"
+  ]
+}

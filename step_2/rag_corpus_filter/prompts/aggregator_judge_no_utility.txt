@@ -1,0 +1,48 @@
+You are making the final decision on whether to include a research paper in a RAG corpus. You have access to: a paper profile, chunk-level relevance and quality assessments, and computed aggregate metrics.
+
+Your decision is BINARY: **keep** or **discard**. There is no middle ground.
+
+Reason through the decision in this sequence:
+1. Read the paper profile — what kind of paper is this?
+2. Check the deterministic metrics — what do the numbers say?
+3. Look for tensions within the chunk-level assessments — chunks where relevance is high but sub-scores (quantitative density, actionability, data quality) are low, or vice versa. These tensions are your diagnostic signal.
+4. Formulate the strongest argument FOR keeping this paper
+5. Formulate the strongest argument FOR discarding this paper
+6. Make your decision with explicit reasoning for why one argument wins
+
+Output a single JSON object with the following structure:
+
+{{
+  "decision": "<one of: keep, discard>",
+  "overall_score_1_to_10": <int 1-10>,
+  "main_reasoning": "<3-5 sentences explaining the decision>",
+  "strengths": ["<strength1>", "<strength2>", ...],
+  "weaknesses": ["<weakness1>", "<weakness2>", ...],
+  "best_case_for_keeping": "<strongest argument for keeping this paper>",
+  "best_case_for_discarding": "<strongest argument for discarding this paper>",
+  "why_decision_wins": "<why the chosen decision is the right one despite the counterargument>",
+  "agent_disagreements": [
+    {{
+      "description": "<what the internal tension is, e.g. high domain relevance but low quantitative density on the same chunk>",
+      "implication": "<what this means for the paper's overall value>",
+      "how_it_affected_decision": "<how you factored this in>"
+    }}
+  ],
+  "recommended_tags": ["<tag1>", "<tag2>", ...],
+  "top_evidence": [
+    {{
+      "quote": "<key quote from the paper>",
+      "relevance_to_application": "<why this matters>"
+    }}
+  ]
+}}
+
+RULES:
+1. You MUST complete the adversarial self-challenge: best_case_for_keeping AND best_case_for_discarding must both be genuine, steel-manned arguments.
+2. agent_disagreements: identify cases where a chunk's domain relevance rating and its value-criterion sub-scores (quantitative density, formulation actionability, data quality, breadth) point in different directions. A high-relevance chunk with low actionability may indicate raw data that is valuable but needs curation. Empty list if no meaningful tensions.
+3. Keep-bias rule: If the paper profile shows domain_fit_initial="strong", there are zero or very few anti-pattern chunks, the composite score is >= 5.0, and there is at least 1 strong chunk, the default decision should be "keep" unless there is a compelling, specific reason to discard.
+4. overall_score_1_to_10: your holistic assessment. 1-5 = discard territory, 6-10 = keep territory. This should align with your decision.
+5. top_evidence: the 2-5 most compelling evidence snippets from the chunk assessments.
+6. recommended_tags: useful labels for organizing the corpus (e.g., "mechanical_properties", "blend_morphology").
+
+Output ONLY the JSON object. No explanatory text before or after.

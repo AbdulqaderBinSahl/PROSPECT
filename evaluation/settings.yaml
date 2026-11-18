@@ -1,0 +1,113 @@
+# Evaluation settings — copy this file next to your run (e.g. runs/my_topic/eval_settings.yaml),
+# fill in every "TODO", and pass it to each script with --settings.
+# Relative paths are resolved against the repository root; run scripts from there.
+# The paper's own settings are in evaluation/examples/scenario_1/settings.yaml.
+
+# ── The PROSPECT run being evaluated ─────────────────────────────────────────
+run_dir: runs/my_topic                  # the Step 2 run folder (holds A1/ A2/ A3/ A3w/ A4/)
+workspace: runs/my_topic/evaluation     # every evaluation output goes here
+conditions: [A1, A2, A3, A3w, A4]       # condition folders to compare, in reporting order
+condition_dirs: {}                      # optional {A1: path/to/folder, ...} if not <run_dir>/<name>
+papers_dir: null                        # default: the folder recorded in run_inputs.json
+operational_config: null                # default: <run_dir>/operational_config.json
+application_description_file: null      # default: the operational config's application description
+
+# ── Part 1: filter validity — do the keep/discard decisions match expert judgement? ──
+filter_validity:
+  sample_file: null                     # default: <workspace>/filter_validity/sample_locked.json
+  sample:
+    seed: 42
+    caps_by_n_kept: {2: 4, 3: 3, 4: 2}  # max papers per fingerprint for papers kept by 2, 3, 4 conditions
+    none_kept_sample: 10                # papers kept by no condition: one per topic cluster
+    none_kept_topic_clusters: 10
+  texts:
+    strip_references: true
+  judge_prompt:
+    template: evaluation/filter_validity/prompts/llm_judge.txt   # the 1-4 anchors mention polymers; edit for other fields
+    core_area: "TODO: the application area in a few words"      # used in the score-4 anchor
+    example_questions: "TODO: three kinds of questions the corpus must answer"   # "" to omit
+  calibration_paper_ids: []             # empty = 2 kept-by-all, 1 kept-by-one, 2 kept-by-none, drawn at random
+  llm_judges:                           # any number; use different model families
+    - {id: llm-a, provider: openai, model: gpt-5.5, retries: 3, backoff: 30, cost_per_1m: [5.0, 30.0]}
+    - {id: llm-b, provider: google, model: gemini-pro-latest, temperature: 0.0, retries: 3, backoff: 30, cost_per_1m: [2.0, 12.0]}
+    - {id: llm-c, provider: anthropic, model: claude-opus-4-7, max_tokens: 512, retries: 3, backoff: 30, cost_per_1m: [5.0, 25.0]}
+    # a local model: {id: llm-d, provider: local, model: qwen2.5-72b-instruct, base_url: "http://localhost:1234/v1", temperature: 0.0}
+  human_raters: [H1, H2]                # any number of anonymous IDs, or [] for an LLM-only panel
+  human_rubric: evaluation/filter_validity/human_rubric_template.md   # copy and adapt it to your application
+  budget_usd: 100                       # the LLM run stops when the estimated cost reaches this
+  consensus:                            # fix before any rating starts
+    keep_score: 3                       # a rater votes keep at score >= 3 (of 4)
+    min_keep_votes: majority            # or a number
+  high_confidence_min_raters: 4         # agreement is also reported on papers where this many raters said "high"
+  bootstrap: {resamples: 10000, seed: 42}
+
+# ── Part 2: does a filtered corpus serve the application? (needs Chroma + Ollama) ──
+retrieval_rag:
+  chunking: {chunk_size: 500, chunk_overlap: 50}          # tokens (tiktoken cl100k_base)
+  embedding: {backend: ollama, model: "embeddinggemma:latest", batch_size: 64}
+  chroma: {host: localhost, port: 8000, collection_prefix: "", collection_suffix: _chroma}
+  retrieval: {top_k: 10}
+  generator:                            # answers each query from the retrieved chunks
+    model: {provider: anthropic, model: claude-opus-4-7, max_tokens: 2500}
+    prompt: evaluation/retrieval_rag/prompts/generator.txt
+    role: "TODO: You are an expert advisor on ... supporting ..."   # first line of the generator prompt
+    key_quantities: "TODO: the quantities to state with units, e.g. strength, viscosity, etc."
+  queries:
+    dir: null                           # default: <workspace>/retrieval_rag/queries
+    knowledge_axes: []                  # optional label per layer 1 query
+    paraphrase:
+      model: {provider: google, model: gemini-pro-latest, temperature: 0.3, seed: 42, json: true, retries: 3, backoff: 2}
+      prompt: evaluation/retrieval_rag/prompts/paraphrase.txt
+      per_query: 1
+      domain: "TODO: the topic of the queries"
+      expert: "TODO: who would ask them, e.g. a materials scientist"
+  references:
+    dir: null                           # default: <workspace>/retrieval_rag/references
+    k: 20                               # chunks the drafter sees; choose with calibrate_k.py
+    drafter: {provider: google, model: gemini-pro-latest, temperature: 0, retries: 3, backoff: 5}
+    prompt: evaluation/retrieval_rag/prompts/reference_drafter.txt
+    application_context: "TODO: two or three sentences on what the application must answer"
+    calibration:
+      k_values: [10, 20, 30, 40, 50]
+      queries:                          # 3 queries that appear in no query layer
+        - {query_id: CAL_01, text: "TODO"}
+        - {query_id: CAL_02, text: "TODO"}
+        - {query_id: CAL_03, text: "TODO"}
+      auditor: {provider: google, model: gemini-pro-latest, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+      auditor_prompt: evaluation/retrieval_rag/prompts/auditor.txt
+  ragas:
+    judge_model: gpt-4o                 # an OpenAI model; pin the ragas version too
+    embeddings_model: text-embedding-3-small
+    primary_metrics: [context_recall, answer_correctness]
+    all_metrics_layers: [1]             # these layers also get faithfulness, context precision, answer relevancy
+  self_consistency:                     # an independent judge from a third model family
+    judge: {provider: anthropic, model: claude-sonnet-4-6, temperature: 0.0, max_tokens: 1024, retries: 5, backoff: 10}
+    prompts:
+      context_recall: evaluation/retrieval_rag/prompts/self_consistency/context_recall.txt
+      answer_correctness: evaluation/retrieval_rag/prompts/self_consistency/answer_correctness.txt
+    fraction: 0.25
+    seed: 42
+  gold:
+    labeller: {provider: google, model: gemini-flash-latest, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+    prompt: evaluation/retrieval_rag/prompts/gold_relevance.txt
+    field: "TODO: the research field, e.g. polymer science"
+    excerpt_chars: 6000
+    spot_check:
+      raters: [H1]                      # human raters for the spot check ([] to skip)
+      second_model: {provider: google, model: gemini-3.1-pro-preview, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+      seed: 42
+      allocation:                       # pairs per (layer, model label); over-sample the 1-vs-2 boundary
+        - {layer: 1, label: 2, n: 12}
+        - {layer: 1, label: 1, n: 10}
+        - {layer: 1, label: 0, n: 6}
+        - {layer: 3, label: 2, n: 7}
+        - {layer: 3, label: 1, n: 10}
+        - {layer: 3, label: 0, n: 7}
+  statistics:
+    contrasts:                          # planned contrasts; difference = to - from; Holm over the family
+      - {name: chunking, from: A1, to: A2, alternative: two-sided}
+      - {name: decomposition, from: A2, to: A3, alternative: two-sided}
+      - {name: adaptive_weights, from: A3, to: A3w, alternative: two-sided}
+      - {name: utility_agent, from: A3, to: A4, alternative: two-sided}
+    bootstrap: {resamples: 10000, seed: 42}
+    summary_bootstrap: {resamples: 1000, seed: 42}

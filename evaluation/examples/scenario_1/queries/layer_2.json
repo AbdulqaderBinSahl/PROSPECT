@@ -1,0 +1,194 @@
+[
+  {
+    "query_id": "Q001_P01",
+    "source_query_id": "Q001",
+    "text": "What is the effect of higher recycled polypropylene loadings on the impact resistance of PP blends?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "layer": 2
+  },
+  {
+    "query_id": "Q002_P01",
+    "source_query_id": "Q002",
+    "text": "What are the reported tensile strength, modulus, and elongation values for mixtures of virgin and recycled polypropylene across various composition ratios?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "layer": 2
+  },
+  {
+    "query_id": "Q003_P01",
+    "source_query_id": "Q003",
+    "text": "What effect do different formulation ratios have on the melt flow rate of polypropylene blends?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "layer": 2
+  },
+  {
+    "query_id": "Q004_P01",
+    "source_query_id": "Q004",
+    "text": "What is the compromise between toughness and modulus when formulating blended polypropylene systems?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "layer": 2
+  },
+  {
+    "query_id": "Q005_P01",
+    "source_query_id": "Q005",
+    "text": "When formulating polymer blends, how does the mechanical behavior of an impact copolymer PP differ from that of a homopolymer PP?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "composition_property_data",
+    "layer": 2
+  },
+  {
+    "query_id": "Q006_P01",
+    "source_query_id": "Q006",
+    "text": "How do experimental test results map the relationship between polypropylene blend ratios and notched impact strength?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "impact_strength",
+    "layer": 2
+  },
+  {
+    "query_id": "Q007_P01",
+    "source_query_id": "Q007",
+    "text": "In what ways do morphological characteristics, such as crystalline structure and dispersed phase domain size, dictate the mechanical behavior of PP blends?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "morphology",
+    "layer": 2
+  },
+  {
+    "query_id": "Q008_P01",
+    "source_query_id": "Q008",
+    "text": "How does the overall property profile of a virgin and recycled polypropylene blend evaluate against a 100% virgin PP baseline?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "layer": 2
+  },
+  {
+    "query_id": "Q009_P01",
+    "source_query_id": "Q009",
+    "text": "Are there any accessible datasets detailing the relationship between composition and properties in multi-component PP systems?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "composition_property_data",
+    "layer": 2
+  },
+  {
+    "query_id": "Q010_P01",
+    "source_query_id": "Q010",
+    "text": "In what ways do the mechanical properties of a polypropylene blend depend on the molecular weight distribution of its individual components?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q011_P01",
+    "source_query_id": "Q011",
+    "text": "In blends of homopolymer and impact copolymer PP, how are the stiffness and processability influenced by a higher homopolymer ratio?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "composition_property_data",
+    "layer": 2
+  },
+  {
+    "query_id": "Q012_P01",
+    "source_query_id": "Q012",
+    "text": "In what ways are the toughness and flexibility of a polymer blend dictated by the ethylene level or the specific comonomer type present in the PP copolymer?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q013_P01",
+    "source_query_id": "Q013",
+    "text": "How much recycled polypropylene can be incorporated into the blend before experiencing a drop in mechanical properties, and which of these properties are most adversely affected by the recycled content?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q014_P01",
+    "source_query_id": "Q014",
+    "text": "Which predictive equations or quantitative frameworks are used to estimate the final properties of PP blends directly from the traits of their starting components?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "composition_property_data",
+    "layer": 2
+  },
+  {
+    "query_id": "Q015_P01",
+    "source_query_id": "Q015",
+    "text": "In what ways are the mechanical performance, degree of crystallinity, and molecular weight of polypropylene altered by repeated reprocessing cycles?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q016_P01",
+    "source_query_id": "Q016",
+    "text": "How are the ductile properties and overall toughness of polypropylene formulations altered by the addition of elastomeric impact modifiers like POE, EPDM, or SEBS?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "additives_impact_modifiers",
+    "layer": 2
+  },
+  {
+    "query_id": "Q017_P01",
+    "source_query_id": "Q017",
+    "text": "By what mechanism do compatibilizing agents increase interfacial bonding and boost the mechanical characteristics of incompatible polypropylene mixtures?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "additives_impact_modifiers",
+    "layer": 2
+  },
+  {
+    "query_id": "Q018_P01",
+    "source_query_id": "Q018",
+    "text": "What impact do reinforcing agents and mineral fillers, specifically glass fiber, talc, and calcium carbonate, have on the trade-off between rigidity and impact resistance in polypropylene formulations?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "additives_impact_modifiers",
+    "layer": 2
+  },
+  {
+    "query_id": "Q019_P01",
+    "source_query_id": "Q019",
+    "text": "In what ways do antioxidant and heat stabilizer packages prevent the degradation of recycled polypropylene's properties during melt reprocessing?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "stabilisers_processing",
+    "layer": 2
+  },
+  {
+    "query_id": "Q020_P01",
+    "source_query_id": "Q020",
+    "text": "What are the typical baseline rheological and mechanical characteristics of commercial homopolymer and impact copolymer polypropylene grades?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "composition_property_data",
+    "layer": 2
+  },
+  {
+    "query_id": "Q021_P01",
+    "source_query_id": "Q021",
+    "text": "What effect does the presence of polyethylene and other contaminating plastics in post-consumer recycled PP feedstocks have on the overall properties of the resulting blend?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q022_P01",
+    "source_query_id": "Q022",
+    "text": "How do the mechanical properties of post-consumer recycled polypropylene fluctuate between different production batches and supplier sources?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "recyclate_properties",
+    "layer": 2
+  },
+  {
+    "query_id": "Q023_P01",
+    "source_query_id": "Q023",
+    "text": "To what extent are the morphological structure and mechanical behavior of PP blends affected by variations in processing conditions, specifically temperature, shear rate, and cooling rate?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "stabilisers_processing",
+    "layer": 2
+  },
+  {
+    "query_id": "Q024_P01",
+    "source_query_id": "Q024",
+    "text": "What are the mechanical property specifications required for PP blends used in both interior and exterior automotive components?",
+    "source": "gemini_3.1_pro_paraphrase",
+    "knowledge_axis": "automotive_requirements",
+    "layer": 2
+  }
+]

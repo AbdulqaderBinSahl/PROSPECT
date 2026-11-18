@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_10",
+  "layer": 3,
+  "query_text": "How does UV or thermal aging affect the mechanical properties and colour of PP compounds containing post-consumer recycled PP, and what stabilisation approaches are reported?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "UV and thermal aging induce thermo-oxidative degradation in polypropylene (PP) compounds, primarily through polymer chain scission [Paper12, Paper125, Paper231]. This scission reduces the average molecular weight of the polymer, leading to a significant deterioration in mechanical performance. Specifically, aging and reprocessing negatively affect tensile strength, elastic modulus, flexural modulus, ductility, elongation at break, and impact strength, while also promoting surface crack formation [Paper14, Paper125, Paper201]. Additionally, the reduction in molecular weight causes an increase in the melt flow rate (MFR) or melt flow index (MFI) [Paper14, Paper85, Paper125, Paper231]. Regarding aesthetics, the oxidation associated with thermal and UV aging is explicitly linked to the discoloration of the PP compounds [Paper14, Paper231].\n\nTo mitigate these degradation effects and extend the lifespan of compounds containing post-consumer recycled PP, several stabilisation approaches are reported:\n\n*   **Reintroduction of Additives:** Stabilizing agents, including antioxidants, UV absorbers, and light stabilizers, are often reintroduced during the recycling and compounding stages to replace those consumed during the polymer's first life cycle [Paper125]. These stabilizers effectively delay thermal decomposition, control thermo-oxidative reactions, maintain the MFR, and increase the oxidation induction time (OIT) [Paper231]. Proper stabilization can restore the life expectancy of recycled PP to match that of virgin material [Paper175]. \n*   **Filler Considerations:** The choice and concentration of other additives in the blend impact stabilization efficacy. For instance, high concentrations of calcium carbonate fillers (e.g., 20%) have been shown to accelerate degradation and significantly reduce life expectancy, even when additional stabilizers are present [Paper175].\n*   **Process Optimization:** Modifying processing parameters—such as temperature, screw speed, and screw configuration during extrusion—can enhance the efficiency of antioxidants and further minimize thermomechanical degradation during compounding [Paper125].\n\nWhile the provided excerpts sufficiently address the general effects of aging and the categories of stabilization approaches used, they do not detail the specific chemical formulations of the UV absorbers or light stabilizers required for optimal performance. Additional data on specific stabilizer chemistries (e.g., specific hindered amine light stabilizers) would be needed to formulate a precise additive package.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper231_10_1002_app_32918",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper125_10_1016_j_polymdegradstab_2025_111337",
+    "Paper231_10_1002_app_32918",
+    "Paper175_10_1016_j_wasman_2007_10_021",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper231_10_1002_app_32918",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper219_10_3390_polym14245438",
+    "Paper219_10_3390_polym14245438",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper231_10_1002_app_32918",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper231_10_1002_app_32918",
+    "Paper185_10_1016_S0141-3910_00_00178-6",
+    "Paper219_10_3390_polym14245438",
+    "Paper125_10_1016_j_polymdegradstab_2025_111337",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper175_10_1016_j_wasman_2007_10_021"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "query_id": "Q005",
+  "layer": 1,
+  "query_text": "How do the mechanical properties of impact copolymer PP compare to those of homopolymer PP in blend systems?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "In blend systems, the mechanical properties of impact copolymer polypropylene (ICP) and homopolymer polypropylene (HPP) exhibit a fundamental trade-off between toughness and stiffness.\n\n**Toughness and Impact Strength:** \nHPP inherently suffers from poor toughness, high brittleness (especially at temperatures below its glass transition), and low impact resistance [Paper38, Paper66]. In contrast, impact copolymers are designed to overcome these limitations, providing significantly higher energy absorption and impact strength [Paper66]. For example, in comparative blends with thermoplastic polyurethane (TPU), modified impact-resistant PP blends demonstrated superior impact strength and energy absorption compared to HPP/TPU blends [Paper66]. \n\n**Stiffness and Tensile Properties:** \nWhile ICP excels in toughness, HPP generally provides superior rigidity and tensile properties. In the aforementioned TPU blends, the HPP-based systems exhibited better tensile strength, Young’s modulus, and flexural strength than their ICP counterparts [Paper66]. Furthermore, incorporating copolymers into an HPP matrix typically results in a decrease in the blend's overall stiffness, tensile strength, and bending modulus [Paper38, Paper87]. \n\n**Interactions in Mixed Blends:** \nImpact copolymers possess a favorable stiffness-toughness balance and can act as effective compatibilizing modifiers in mixed polyolefin systems [Paper44]. When blending ICP directly with HPP, the resulting mechanical properties depend heavily on the specific polymer grades, their molecular weights, and their miscibility. In some formulations, adding HPP to an ICP matrix negatively affects the blend's impact strength because the HPP has inherently lower impact resistance, exhibits disordered rubber immiscibility, and acts as a stress concentrator [Paper16]. However, if the HPP is miscible within the ICP matrix, adding a small amount of HPP can actually improve impact resistance (by up to 33% in certain grades) by facilitating better rubber dispersion and molecular distribution within the continuous phase [Paper16].\n\n**Missing Information:** \nWhile the provided excerpts detail the comparative mechanical properties of virgin HPP and ICP, they do not contain information regarding how these properties are affected when post-consumer recycled PP (PCR-PP) is introduced into the blend. Additionally, the excerpts lack data on when specific additives (such as stabilisers or fillers) are required to meet target mechanical performance. Additional data regarding PCR-PP integration and additive formulation would be needed to fully address the advisory system's requirements.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper38_10_1002_app_52691",
+    "Paper38_10_1002_app_52691",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper66_10_3390_app7121254",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper44_10_1002_pi_6268",
+    "Paper38_10_1002_app_52691",
+    "Paper84_10_1007_s00289-012-0880-1",
+    "Paper38_10_1002_app_52691",
+    "Paper27_10_21608_EJCHEM_2024_258606_9096",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper38_10_1002_app_52691",
+    "Paper66_10_3390_app7121254",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper72_10_1002_pen_24267",
+    "Paper91_10_1002_app_29827"
+  ]
+}

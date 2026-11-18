@@ -1,0 +1,31 @@
+{
+  "domain": "polypropylene blend formulation",
+  "application_context": "A retrieval-augmented advisory system that helps R&D engineers formulate polypropylene compounds that blend virgin and post-consumer recycled polypropylene for automotive parts. It should answer questions about how blend composition, additives and processing affect impact strength, melt flow rate and tensile strength.",
+  "knowledge_axes": [
+    {
+      "name": "composition-property relationships",
+      "description": "Measured mechanical and rheological properties as a function of blend ratio and recycled content",
+      "priority": "primary"
+    },
+    {
+      "name": "property modifiers",
+      "description": "Effects of impact modifiers, compatibilisers, fillers and stabilisers on blend performance",
+      "priority": "secondary"
+    },
+    {
+      "name": "recycled feedstock variability",
+      "description": "Contamination, degradation and batch-to-batch variation of recycled polypropylene",
+      "priority": "supporting"
+    }
+  ],
+  "scope_boundaries": [
+    "Packaging films and fibres",
+    "Chemical recycling and pyrolysis"
+  ],
+  "content_anti_patterns": [
+    "Market or policy commentary with no material property data",
+    "Studies on polymers other than polypropylene with no polypropylene comparison"
+  ],
+  "depth_expectation": "quantitative composition-property data over general reviews",
+  "time_window": "2000-2025"
+}

@@ -1,0 +1,23 @@
+You are producing a factual profile of this research paper. Report what you observe about its type, methodology, scope, and data content. Do NOT evaluate, recommend inclusion/exclusion, or express opinions about quality. Your output is a factual characterization only.
+
+Output a single JSON object with the following structure:
+
+{{
+  "paper_type": "<one of: experimental, review, simulation, case_study, methods_development, industry_report, mixed>",
+  "methodology_summary": "<2-3 sentences. What did the authors actually do?>",
+  "scope": "<1-2 sentences. What materials, processes, conditions are covered?>",
+  "data_types_present": [
+    "<one or more of: experimental_measurements, process_parameters, mechanical_properties, rheological_data, thermal_analysis, spectroscopic_data, microscopy_images, simulation_results, literature_compilation, industrial_production_data, none_apparent>"
+  ],
+  "domain_fit_initial": "<one of: strong, partial, weak>",
+  "profiler_notes": "<Any flags or observations. E.g., 'appears to be about virgin material only', 'conference abstract, may lack depth', 'review paper covering broad range of systems'>"
+}}
+
+RULES:
+1. Base your profile on the abstract, conclusion text, and metadata provided.
+2. For paper_type: choose the single best fit. Use "mixed" only if the paper genuinely spans multiple types.
+3. For data_types_present: list ALL data types you observe evidence of. Include "none_apparent" ONLY if the paper appears to contain no data at all.
+4. For domain_fit_initial: assess how well this paper fits the APPLICATION DOMAIN provided. "strong" = clearly within the domain. "partial" = overlapping but not centered on it. "weak" = peripheral or tangential.
+5. Do NOT make inclusion/exclusion recommendations. Only describe what you observe.
+
+Output ONLY the JSON object. No explanatory text before or after.

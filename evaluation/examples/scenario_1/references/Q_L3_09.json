@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_09",
+  "layer": 3,
+  "query_text": "How does the crystallinity and crystallisation temperature of polypropylene blends change with increasing recycled PP content, and what effect does this have on stiffness and impact performance?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The incorporation of recycled polypropylene (rPP) into virgin polypropylene (vPP) alters the blend's crystallization behavior and subsequent mechanical properties. \n\n**Crystallinity and Crystallisation Temperature**\nAt low concentrations (e.g., up to 25% rPP), the degree of crystallinity can slightly increase. This occurs because residual crystalline fragments, particulate contaminants, and shorter polymer chains—resulting from chain scission during previous recycling cycles—act as heterogeneous nucleating agents. These agents enhance molecular mobility and promote faster, more efficient organization of polymer chains during cooling [Paper12, Paper219]. However, at higher rPP contents, overall crystallinity generally decreases as the negative effects of accumulated thermal and oxidative degradation become more pronounced [Paper12]. \n\nIncreasing the rPP content generally raises the crystallisation temperature ($T_c$) of the blends. For example, studies show $T_c$ shifting from 112.3 °C for virgin PP up to 124.2 °C for 100% rPP [Paper12], with similar progressive increases noted in other blend ratios [Paper126, Paper219]. This increase indicates that the recycled material promotes earlier nucleation during cooling due to the higher proportion of shorter polymeric chains and existing nucleation sites [Paper12, Paper126, Paper219]. Conversely, one study noted that $T_c$ remained relatively constant around 120 °C regardless of rPP content, suggesting that in certain formulations the thermal transitions are not substantially affected [Paper201].\n\n**Effect on Stiffness and Impact Performance**\nThe changes in crystallinity and the presence of degraded chains directly impact mechanical performance. Because polymer crystals are stiffer and stronger than amorphous regions, a decrease in overall crystallinity diminishes the tensile and bending modulus (stiffness) as well as tensile strength [Paper38, Paper89]. \n\nWhile low additions of rPP (10–25%) can maintain or slightly improve stiffness and yield strength, higher proportions lead to a notable decline in impact resistance, ductility, and slow crack growth performance [Paper12]. At high recycled contents, severe embrittlement occurs due to oxidative degradation, peroxidation, and chain scission, which reduce the material's ability to undergo plastic deformation before failure [Paper12, Paper159]. \n\n*Note on missing information:* While the retrieved excerpts explain the general effects of rPP on vPP blends, they do not provide specific data on the exact ternary blend system required by the application context (virgin impact copolymer PP blended with virgin homopolymer PP and PCR-PP). Additional empirical data evaluating the specific phase morphology and interactions between virgin impact copolymers and PCR-PP would be required to precisely model the trade-off between impact performance and stiffness for that specific formulation.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper159_10_1002_vnl_21390",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper38_10_1002_app_52691",
+    "Paper12_10_3390_polym17111556",
+    "Paper126_10_1016_j_polymdegradstab_2025_111249",
+    "Paper219_10_3390_polym14245438",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper126_10_1016_j_polymdegradstab_2025_111249",
+    "Paper172_10_1002_pen_21716",
+    "Paper62_10_1016_j_addma_2018_11_009",
+    "Paper48_10_3390_polym13071137",
+    "Paper123_10_30657_pea_2025_31_31",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper106_10_1002_app_20357",
+    "Paper219_10_3390_polym14245438"
+  ]
+}

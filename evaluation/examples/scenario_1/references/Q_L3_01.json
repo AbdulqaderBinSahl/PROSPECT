@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_01",
+  "layer": 3,
+  "query_text": "What minimum Charpy or Izod notched impact values at -20°C are required for PP compounds in automotive applications, and which blend compositions have demonstrated compliance?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The provided excerpts do not contain information regarding the specific minimum Charpy or Izod notched impact values at -20°C required for polypropylene (PP) compounds in automotive applications. To fully answer this query, additional reference data detailing automotive original equipment manufacturer (OEM) material specifications or industry standards for specific vehicle components is required.\n\nWhile compliance with a specific automotive threshold cannot be evaluated, the retrieved literature identifies several PP blend compositions that demonstrate high notched impact strength at or below -20°C:\n\n*   **iPP/EOC/PPC Ternary Blends:** Blends comprising isotactic PP (iPP), poly(ethylene-co-octene) (EOC), and a PP copolymer (PPC) exhibit exceptional low-temperature toughness. Research indicates that ternary blends containing less than 18 wt% PPC (e.g., 5 wt% and 10 wt%) did not break at or above -20°C, and remained tough without breaking even below -30°C [Paper36]. A specific ternary composition of 42/53/5 (iPP/EOC/PPC) achieved an impact strength of approximately 94.98 kJ/m2 at -40°C, which is 49 times higher than pristine iPP [Paper36]. \n*   **PP/POE Blends:** A binary blend of PP and polyolefin elastomer (POE 8677) at an 80/20 ratio demonstrated optimal impact resistance at temperatures as low as -45°C [Paper33].\n*   **PP/Elastomer Copolymer Blends:** Blending PP with Infuse (I) copolymers resulted in higher Izod impact strengths at -20°C compared to blends using other copolymers, such as Engage (E) or Vistamaxx (V) [Paper38].\n\nAchieving these low-temperature impact properties generally requires lowering the glass transition temperature of the system. This is typically accomplished by incorporating rubber components or elastomers with lower glass transition temperatures to alter the brittle-to-ductile transition point [Paper20]. For instance, the modulus of the elastomer should ideally be less than or equal to one-tenth of the PP matrix to effectively toughen the blend at low temperatures [Paper33]. Furthermore, the structural packing of these elastomeric domains—such as the co-existence of EOC macrodomains and ethylene-propylene rubber (EPR) microdomains—plays a critical role in absorbing impact energy through shear yielding and crazing [Paper36].",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper44_10_1002_pi_6268",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper74_10_1007_s13233-015-3106-1",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper51_10_1016_j_compscitech_2020_108148",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper220_10_3390_polym14235232",
+    "Paper220_10_3390_polym14235232",
+    "Paper101_10_1002_app_24257",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper20_10_1016_j_polymertesting_2024_108670",
+    "Paper38_10_1002_app_52691",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper220_10_3390_polym14235232",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper74_10_1007_s13233-015-3106-1",
+    "Paper101_10_1002_app_24257",
+    "Paper223_10_3390_polym13101574"
+  ]
+}

@@ -1,0 +1,135 @@
+# The evaluation settings used for the paper (Scenario 1: polypropylene blend formulation).
+#
+# The paper's PDFs and filter outputs are not distributed. To rerun this
+# evaluation, put a PROSPECT run folder with the five conditions at run_dir
+# (or point run_dir / condition_dirs at yours). The fixed inputs the paper used
+# are in this folder: the locked Step 2 sample, the three query layers, the 34
+# reference answers, the application description and the human rubric.
+#
+# Run every script from the repository root:
+#   python evaluation/filter_validity/compute_metrics.py --settings evaluation/examples/scenario_1/settings.yaml
+
+run_dir: runs/scenario_1
+workspace: runs/scenario_1/evaluation
+conditions: [A1, A2, A3, A3w, A4]
+condition_dirs: {}
+papers_dir: null
+operational_config: null
+application_description_file: evaluation/examples/scenario_1/application_description.txt
+
+# ── Part 1: filter validity (Expert-LLM Reference Panel) ─────────────────────
+filter_validity:
+  sample_file: evaluation/examples/scenario_1/sample_locked.json   # 101 papers, locked 2 May 2026
+  sample:
+    seed: 42
+    caps_by_n_kept: {2: 4, 3: 3, 4: 2}
+    none_kept_sample: 10
+    none_kept_topic_clusters: 10
+  texts:
+    strip_references: true
+  judge_prompt:
+    template: evaluation/filter_validity/prompts/llm_judge.txt
+    core_area: rPP/automotive formulation
+    example_questions: >-
+      composition-property relationships in PP/recyclate blends, processing parameters
+      for impact-toughened formulations, and trade-offs between mechanical properties
+  calibration_paper_ids:
+    - Paper147_10_3390_recycling6030051
+    - Paper185_10_1016_S0141-3910_00_00178-6
+    - Paper100_10_1002_pen_20480
+    - Paper101_10_1002_app_24257
+    - Paper108_10_4144_rpsj_51_56
+  llm_judges:
+    - {id: llm-a, provider: openai, model: gpt-5.5, retries: 3, backoff: 30, cost_per_1m: [5.0, 30.0]}
+    - {id: llm-b, provider: google, model: gemini-pro-latest, temperature: 0.0, retries: 3, backoff: 30, cost_per_1m: [2.0, 12.0]}
+    - {id: llm-c, provider: anthropic, model: claude-opus-4-7, max_tokens: 512, retries: 3, backoff: 30, cost_per_1m: [5.0, 25.0]}
+  human_raters: [H1, H2]
+  human_rubric: evaluation/examples/scenario_1/human_rubric.md
+  budget_usd: 100
+  consensus:
+    keep_score: 3
+    min_keep_votes: majority          # 3 of 5
+  high_confidence_min_raters: 4
+  bootstrap: {resamples: 10000, seed: 42}
+
+# ── Part 2: RAG evaluation ───────────────────────────────────────────────────
+retrieval_rag:
+  chunking: {chunk_size: 500, chunk_overlap: 50}
+  embedding: {backend: ollama, model: "embeddinggemma:latest", batch_size: 64}
+  chroma: {host: localhost, port: 8000, collection_prefix: "", collection_suffix: _chroma}
+  retrieval: {top_k: 10}
+  generator:
+    model: {provider: anthropic, model: claude-opus-4-7, max_tokens: 2500}
+    prompt: evaluation/retrieval_rag/prompts/generator.txt
+    role: >-
+      You are an expert polymer engineering advisor supporting R&D decisions for formulating
+      polypropylene compounds that blend virgin impact copolymer and homopolymer with
+      post-consumer recycled PP for automotive applications.
+    key_quantities: impact strength, MFR, tensile strength, etc.
+  queries:
+    dir: evaluation/examples/scenario_1/queries        # 24 layer 1, 24 layer 2, 10 layer 3
+    knowledge_axes: []
+    paraphrase:
+      model: {provider: google, model: gemini-pro-latest, temperature: 0.3, seed: 42, json: true, retries: 3, backoff: 2}
+      prompt: evaluation/retrieval_rag/prompts/paraphrase.txt
+      per_query: 1
+      domain: polypropylene blend formulation
+      expert: a polymer engineer or materials scientist
+  references:
+    dir: evaluation/examples/scenario_1/references     # 34 reference answers (layers 1 and 3)
+    k: 20
+    drafter: {provider: google, model: gemini-pro-latest, temperature: 0, retries: 3, backoff: 5}
+    prompt: evaluation/retrieval_rag/prompts/reference_drafter.txt
+    application_context: |-
+      An LLM-based advisory system that suggests optimal formulations of polypropylene compounds by
+      blending virgin impact copolymer PP, virgin homopolymer PP, and post-consumer recycled PP (PCR-PP)
+      to meet target mechanical performance. The system must answer questions about how blend ratios
+      affect impact strength, melt flow rate, and tensile strength, and identify when additives
+      (impact modifiers, compatibilisers, stabilisers, fillers) are required.
+    calibration:
+      k_values: [10, 20, 30, 40, 50]
+      queries:
+        - query_id: CAL_01
+          text: How does the rubber phase morphology in impact copolymer PP affect notched Charpy impact values at low temperatures?
+        - query_id: CAL_02
+          text: What melt flow index ranges are typical for post-consumer recycled PP from automotive dismantling, and how do they compare to virgin PP grades?
+        - query_id: CAL_03
+          text: Which compatibiliser chemistries have been shown to reduce phase separation in PP/rPP blends without substantially reducing melt flow rate?
+      auditor: {provider: google, model: gemini-pro-latest, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+      auditor_prompt: evaluation/retrieval_rag/prompts/auditor.txt
+  ragas:
+    judge_model: gpt-4o
+    embeddings_model: text-embedding-3-small
+    primary_metrics: [context_recall, answer_correctness]
+    all_metrics_layers: [1]
+  self_consistency:
+    judge: {provider: anthropic, model: claude-sonnet-4-6, temperature: 0.0, max_tokens: 1024, retries: 5, backoff: 10}
+    prompts:
+      context_recall: evaluation/retrieval_rag/prompts/self_consistency/context_recall.txt
+      answer_correctness: evaluation/retrieval_rag/prompts/self_consistency/answer_correctness.txt
+    fraction: 0.25
+    seed: 42
+  gold:
+    labeller: {provider: google, model: gemini-flash-latest, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+    prompt: evaluation/retrieval_rag/prompts/gold_relevance.txt
+    field: polymer science
+    excerpt_chars: 6000
+    spot_check:
+      raters: [H1]
+      second_model: {provider: google, model: gemini-3.1-pro-preview, temperature: 0.0, json: true, timeout: 120, retries: 6, backoff: 30}
+      seed: 42
+      allocation:                        # 52 pairs; over-samples the label 1 vs 2 boundary
+        - {layer: 1, label: 2, n: 12}
+        - {layer: 1, label: 1, n: 10}
+        - {layer: 1, label: 0, n: 6}
+        - {layer: 3, label: 2, n: 7}
+        - {layer: 3, label: 1, n: 10}
+        - {layer: 3, label: 0, n: 7}
+  statistics:
+    contrasts:                           # difference = to - from
+      - {name: chunking, from: A1, to: A2, alternative: two-sided}
+      - {name: decomposition, from: A2, to: A3, alternative: two-sided}
+      - {name: adaptive_weights, from: A3, to: A3w, alternative: two-sided}
+      - {name: utility_agent, from: A3, to: A4, alternative: two-sided}   # A4 - A3: effect of removing the Utility Simulator
+    bootstrap: {resamples: 10000, seed: 42}
+    summary_bootstrap: {resamples: 1000, seed: 42}

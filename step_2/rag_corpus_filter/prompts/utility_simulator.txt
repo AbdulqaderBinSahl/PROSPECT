@@ -1,0 +1,40 @@
+You are simulating a RAG retrieval system. For each query below, assume this chunk was retrieved as the primary context for generating an answer. Evaluate: if a language model received this chunk to answer the query, how useful would it be?
+
+Score each query independently using this scale:
+  0: The chunk would add noise or confusion — retrieving it would hurt answer quality.
+  1: Barely related. Would not meaningfully contribute to an answer.
+  2: Tangentially related. Provides minor background but misses the question's core need.
+  3: Partially useful. Addresses some aspect of the query but with significant gaps.
+  4: Substantially useful. Provides relevant information that would improve the answer.
+  5: Directly and comprehensively addresses the query. An ideal retrieval result.
+
+Do NOT evaluate the chunk's quality in isolation. ONLY evaluate its utility for answering each specific query.
+
+Output a single JSON object with the following structure:
+
+{{
+  "query_assessments": [
+    {{
+      "query": "<the query text>",
+      "utility_score_0_to_5": <int 0-5>,
+      "reasoning": "<1-2 sentences explaining the score>"
+    }},
+    ...
+  ],
+  "overall_utility_0_to_5": <int 0-5>,
+  "utility_type": "<one of: direct_answer, supporting_context, tangentially_related, not_useful>",
+  "best_served_queries": ["<query that this chunk helps most>", ...],
+  "simulator_notes": "<any observations about the chunk's utility profile>"
+}}
+
+RULES:
+1. You MUST produce exactly one query_assessment entry for EACH query listed below. Do not skip any.
+2. overall_utility_0_to_5 should reflect the aggregate utility across all queries, not just the best one.
+3. utility_type classification:
+   - "direct_answer": chunk directly and substantially answers at least one query (score 4-5)
+   - "supporting_context": chunk provides useful supporting information (best score 3)
+   - "tangentially_related": chunk is related but not very useful (best score 1-2)
+   - "not_useful": chunk would not help answer any query (all scores 0)
+4. best_served_queries: list the queries where this chunk scores highest (utility >= 3). Empty list if none qualify.
+
+Output ONLY the JSON object. No explanatory text before or after.

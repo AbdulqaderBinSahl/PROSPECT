@@ -1,0 +1,28 @@
+You are building a ground-truth relevance set for a scientific retrieval
+evaluation in {{ field }}. Judge whether ONE paper contains content that
+materially answers ONE query. Judge only from the excerpt provided. Do not use
+outside knowledge and do not reward papers that merely mention the topic in
+passing.
+
+QUERY:
+{{ query }}
+
+PAPER TITLE:
+{{ title }}
+
+PAPER EXCERPT:
+{{ excerpt }}
+
+Assign a relevance label:
+
+  2 — Directly answers. The paper reports data, results, mechanisms, or
+      analysis that a domain expert would cite to answer this specific query.
+  1 — Tangentially related. The paper touches the topic but does not provide
+      content that substantively answers the query.
+  0 — Not relevant. The paper does not address the query.
+
+Be strict: most papers in a broad corpus are 0 or 1 for any specific query.
+Reserve 2 for papers whose content genuinely supports an answer.
+
+Return ONLY this JSON object:
+{"label": 0|1|2, "rationale": "one sentence, <=25 words"}

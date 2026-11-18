@@ -1,0 +1,31 @@
+{
+  "query_id": "Q003",
+  "layer": 1,
+  "query_text": "How does melt flow rate vary across different polypropylene blend compositions?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The variation of melt flow rate (MFR) or melt flow index (MI) across polypropylene (PP) blends is highly dependent on the molecular weight (Mw) of the components, processing conditions, and the presence of recycled materials or foreign polymers.\n\nIn virgin PP blends, the resulting MI can exhibit counterintuitive behavior due to complex molecular interactions. For instance, blending an impact copolymer (ICP) with a higher Mw PP homopolymer can unexpectedly increase the MI. This occurs because the lower Mw chains in the ICP improve chain mobility and act as a plasticizer, while the extrusion process may cause molecular chain breakdown [Paper16]. Conversely, blending an ICP with a high-MI PP homopolymer can result in a lower overall MI. High shear forces and thermal conditions during compounding can induce chain scission and recombination between the differing Mw chains, increasing overall viscosity and reducing flow [Paper16].\n\nWhen incorporating recycled PP (rPP), the MFI is heavily influenced by the recyclate's degradation history. In some isotactic PP (iPP) blends, increasing the rPP content significantly increases the MFI—up to five times that of neat iPP—because the rPP chains have degraded during previous reprocessing cycles [Paper14]. However, if the rPP originates from a lower-MFI stock, its addition will decrease the blend's MFI. For example, blending a virgin PP GF30 (MFI = 12 g/10 min) with an rPP (MFI = 6 g/10 min) results in intermediate MFI values that decrease as rPP content increases [Paper136]. \n\nThe presence of foreign polymers also alters the melt volume flow rate (MVR). Blending PP with 10% polylactic acid (PLA) increases the MVR by 118% due to rapid degradation at PP processing temperatures, whereas adding 10% polyethylene terephthalate (PET) reduces the MVR by 21% due to increased viscosity [Paper209]. Contaminants like PC, PS, and ABS have minimal impact on the MVR [Paper209].\n\nFor certain blends, MFR variation is highly predictable. For example, the MFR of conventional PP blended with mLLDPE increases in a nearly additive manner [Paper119], and some rPP compounds follow the Arrhenius mixing rule within a 10% error margin [Paper220]. Additionally, the inclusion of nucleating agents in iPP/rPP blends does not significantly alter the MFI [Paper14].\n\nWhile the provided excerpts detail how various blend ratios and contaminants affect MFR, they do not contain sufficient information to fully determine how specific compatibilisers, stabilisers, or impact modifiers quantitatively adjust MFR to optimize target mechanical performance. Additional rheological data on these specific additives would be required to fully map formulation parameters for the advisory system.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper136_10_3390_ma17061433",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper200_10_4271_2000-01-1127",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper220_10_3390_polym14235232",
+    "Paper84_10_1007_s00289-012-0880-1",
+    "Paper43_10_1080_00222348_2022_2152158",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper83_10_1177_026248931303200301",
+    "Paper175_10_1016_j_wasman_2007_10_021",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper48_10_3390_polym13071137",
+    "Paper163_10_1016_j_matdes_2014_05_013",
+    "Paper105_10_1002_app_20207",
+    "Paper209_10_3390_polym16162301",
+    "Paper83_10_1177_026248931303200301",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper179_10_1002_app_21263"
+  ]
+}

@@ -1,0 +1,32 @@
+Your task is to measure context recall: what fraction of the factual claims in a ground-truth
+reference answer are actually present in the retrieved source passages.
+
+This evaluates the retrieval system — did it fetch the passages that contain the information
+needed to produce a correct answer? It does NOT evaluate the quality of any generated answer.
+
+Below you have a ground-truth reference answer written by an expert, and a set of source passages
+that were retrieved by a RAG system for the same question.
+
+Step 1: Break the ground-truth reference answer into individual factual claims (each numerical
+value, causal relationship, recommended approach, or named entity counts as one claim).
+
+Step 2: For each claim, decide whether it is explicitly present in, or can be directly inferred
+from, the retrieved source passages. A claim is NOT supported if the passages are silent on it
+or contradict it.
+
+Step 3: Compute recall = (claims supported by the retrieved passages) ÷ (total claims in the
+reference answer). Express as a decimal between 0 and 1.
+
+RETRIEVED SOURCE PASSAGES:
+{contexts}
+
+GROUND-TRUTH REFERENCE ANSWER:
+{ground_truth}
+
+Return your result as JSON with no additional text:
+{{
+  "score": <float 0.0–1.0>,
+  "supported_claims": <integer>,
+  "total_claims": <integer>,
+  "reasoning": "<one short paragraph naming the claims NOT found in the retrieved passages, or 'All claims found in retrieved passages' if score=1>"
+}}

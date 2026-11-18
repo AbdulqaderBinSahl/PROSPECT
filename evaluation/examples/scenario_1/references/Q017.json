@@ -1,0 +1,31 @@
+{
+  "query_id": "Q017",
+  "layer": 1,
+  "query_text": "What role do compatibilisers play in improving the interfacial adhesion and mechanical properties of immiscible polypropylene blends?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "In immiscible polypropylene (PP) blends, compatibilisers play a critical role in mitigating phase separation by acting as molecular bridges between incompatible polymer phases. Their primary function is to reduce interfacial tension and promote interfacial adhesion, which facilitates a more stable and uniform blend [Paper11, Paper18]. \n\nMechanistically, compatibilisers achieve this through functional groups or specific block structures that interact with both phases via covalent bonds, strong physical interactions, or chain interpenetration at the interface [Paper11, Paper18, Paper50]. For example, in PE/PP blends, multiblock copolymers enable interpenetration between the compatibiliser and homopolymer chains [Paper50]. This interfacial modification improves phase dispersion, reduces the domain size of the dispersed phase, and initiates coalescence, resulting in a finer, more homogeneous morphology [Paper11, Paper18, Paper44].\n\nBy improving interfacial adhesion, compatibilisers enable more efficient stress transfer between the blended phases, which directly enhances mechanical properties [Paper6]. The addition of compatibilisers typically improves tensile strength, impact performance, and tensile ductility [Paper18, Paper44]. However, the specific mechanical outcomes depend on the blend and compatibiliser type. For instance, in NBR/PP blends, reactive compatibilisers increased tensile strength and Young’s modulus but reduced elongation at break [Paper18]. In recycled polyolefin blends, standard block copolymer compatibilisers often improve toughness and ductility but can cause a reduction in material stiffness, yield stress, and modulus. This has prompted the use of alternatives, such as impact polypropylene copolymers, to maintain a desirable stiffness-toughness balance [Paper44]. \n\nAdditionally, compatibilisers influence the rheological properties of the blend. Enhanced interfacial interactions restrict polymer chain mobility, which can increase the blend's viscosity and correspondingly decrease its Melt Flow Index (MFI) [Paper18]. \n\nFinally, the provided excerpts emphasize that determining the optimal compatibiliser concentration is crucial. While initial additions improve mechanical and thermal properties, exceeding the optimum concentration can negatively affect the blend's processability and lead to a decrease in overall performance [Paper6, Paper18].",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper62_10_1016_j_addma_2018_11_009",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper50_10_1016_j_polymer_2020_122795",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper6_10_3390_app152211998",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper6_10_3390_app152211998",
+    "Paper44_10_1002_pi_6268",
+    "Paper80_10_4028_www_scientific_net_KEM_594-595_837",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper60_10_1016_j_polymer_2018_12_011",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper4_10_1021_acs_iecr_5c03426",
+    "Paper18_10_1016_j_mtcomm_2024_111336",
+    "Paper38_10_1002_app_52691",
+    "Paper11_10_1007_s12034-025-03433-2",
+    "Paper82_10_1016_j_matchemphys_2013_01_060",
+    "Paper38_10_1002_app_52691",
+    "Paper3_10_1016_j_rineng_2025_108360"
+  ]
+}

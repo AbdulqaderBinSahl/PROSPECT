@@ -1,0 +1,31 @@
+{
+  "query_id": "Q013",
+  "layer": 1,
+  "query_text": "At what recycled PP content levels do blend mechanical properties begin to degrade, and which properties are most sensitive?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Mechanical properties of virgin polypropylene (vPP) and recycled polypropylene (rPP) blends begin to show notable degradation when recycled content exceeds the 25% to 40% range. Blends containing 10% rPP exhibit minimal impact on yield strength and crack growth resistance [Paper12]. At 25% rPP, the material maintains a favorable balance of properties, retaining approximately 96% of the elastic modulus and 101% of the yield strength of virgin PP, with only slight reductions in elongation at break [Paper12]. Some research indicates that up to 40 wt.% rPP can be incorporated without significantly altering tensile strength or modulus [Paper12]. However, exceeding these concentrations leads to progressive mechanical deterioration.\n\nThe properties most sensitive to high recycled content are ductility (elongation at break), impact resistance, slow crack growth (SCG) performance, and break strength [Paper12]. For example, at 100% rPP, elongation at break can plummet by 85% and break strength by 63% compared to virgin PP [Paper12]. This severe embrittlement is primarily caused by polymer chain scission, oxidative degradation from prior lifecycles, and contaminants acting as stress concentrators [Paper12, Paper85]. The elastic modulus also demonstrates a clear, continuous decrease—dropping by up to 29% at 100% rPP—which predictably follows the Law of Mixtures [Paper12].\n\nThe provided excerpts do not contain enough information to fully answer the query within the specific application context. Specifically, the texts do not differentiate how degradation thresholds vary when blending post-consumer recycled PP with virgin impact copolymer PP versus virgin homopolymer PP. Additionally, the excerpts do not identify the specific recycled content levels at which additives (such as impact modifiers, compatibilisers, stabilisers, or fillers) become required to restore target mechanical performance. To fully address the system's requirements, additional data is needed regarding the distinct blending behaviors of homopolymer versus copolymer matrices, as well as quantitative guidelines for additive dosing at varying PCR-PP ratios.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper209_10_3390_polym16162301",
+    "Paper159_10_1002_vnl_21390",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper106_10_1002_app_20357",
+    "Paper223_10_3390_polym13101574",
+    "Paper219_10_3390_polym14245438",
+    "Paper163_10_1016_j_matdes_2014_05_013",
+    "Paper12_10_3390_polym17111556",
+    "Paper147_10_3390_recycling6030051",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper233_10_1002_app_12168",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper89_10_1016_j_matdes_2009_07_031"
+  ]
+}

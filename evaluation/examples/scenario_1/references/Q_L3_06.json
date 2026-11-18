@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_06",
+  "layer": 3,
+  "query_text": "How does increasing post-consumer recycled PP content affect the melt flow rate of virgin-recycled PP blends, and what compounding strategies are used to compensate for MFR drift in automotive injection moulding grades?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Increasing post-consumer recycled polypropylene (PCR-PP) content generally increases the melt flow rate (MFR) and polymer fluidity of virgin-recycled PP blends [Paper12]. This occurs because repeated processing induces thermomechanical degradation and chain scission, which reduces the polymer's average molecular weight and consequently increases the MFR [Paper146, Paper201]. Commercially available post-consumer PP recyclates, particularly from packaging waste, typically exhibit high MFRs starting around 10 g/10 min [Paper141, Paper220]. However, the exact rheological impact depends on the specific blend components and the presence of contaminants. For example, PET contamination in the recycling stream can increase melt viscosity, while PLA contamination can degrade during processing and significantly increase the melt volume rate [Paper209]. Conversely, some studies report no significant effect of recyclate content on viscosity for certain PP mixtures [Paper15, Paper22].\n\nTo compensate for MFR drift, a primary compounding strategy is blending high-MFR recyclates with low-MFR virgin PP [Paper220]. The resulting MFR of these blends can be predicted and controlled using the Arrhenius mixing rule [Paper220]. Another approach involves incorporating high melt strength polypropylene (HMS-PP) or long-chain branched PP (LCB-PP) into the recycled blends to modify their rheological behavior [Paper48]. Additionally, stabilizers can be introduced during compounding to prevent further chain scission and subsequent MFI increases, as residual stabilizers from the initial polymer are often exhausted during recycling operations [Paper146]. \n\nWhile the provided excerpts note that MFR values between 1 and 100 g/10 min are suitable for injection molding applications in the automotive sector [Paper146], the retrieved documents do not contain enough information to fully detail compounding strategies specifically tailored for MFR drift in \"automotive injection moulding grades.\" Additional data detailing specific automotive industry MFR targets, exact virgin-to-recyclate ratios required for automotive specifications, and the use of specific impact modifiers or compatibilisers to correct automotive-grade MFR drift would be needed to completely answer the query.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper202_10_1002_pen_70353",
+    "Paper220_10_3390_polym14235232",
+    "Paper12_10_3390_polym17111556",
+    "Paper152_10_3390_recycling4030033",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper12_10_3390_polym17111556",
+    "Paper209_10_3390_polym16162301",
+    "Paper209_10_3390_polym16162301",
+    "Paper12_10_3390_polym17111556",
+    "Paper141_10_1002_app_54451",
+    "Paper146_10_3390_recycling6040076",
+    "Paper201_10_1016_j_nxmate_2026_101622",
+    "Paper220_10_3390_polym14235232",
+    "Paper48_10_3390_polym13071137",
+    "Paper209_10_3390_polym16162301",
+    "Paper15_10_1002_pc_27806",
+    "Paper22_10_1155_adv_7570978",
+    "Paper207_10_3390_polym16223169",
+    "Paper106_10_1002_app_20357",
+    "Paper146_10_3390_recycling6040076"
+  ]
+}

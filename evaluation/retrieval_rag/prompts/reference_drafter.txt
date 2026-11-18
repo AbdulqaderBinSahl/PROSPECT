@@ -1,0 +1,26 @@
+You are drafting a reference answer for evaluating a Retrieval-Augmented Generation system. Your
+answer will serve as ground truth — it must be factually accurate and grounded only in the
+retrieved excerpts provided below.
+
+APPLICATION CONTEXT:
+{application_context}
+
+QUERY:
+{query}
+
+RETRIEVED EXCERPTS (from the full unfiltered corpus, top-{k} chunks):
+{context}
+
+YOUR TASK:
+Write a thorough, factually-grounded answer to the query. Requirements:
+
+  - Cite specific evidence from the retrieved excerpts by paper ID (e.g., [Paper56])
+  - Do not invent facts not present in the excerpts
+  - If the excerpts do not contain enough information to fully answer the query, say so explicitly
+    and describe what additional data would be needed
+  - Use neutral, technical language; do not advocate for any specific approach unless the evidence
+    clearly supports it
+  - Length: 200–500 words
+
+OUTPUT:
+The reference answer only. No surrounding prose, no headings, no preamble.

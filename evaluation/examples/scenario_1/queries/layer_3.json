@@ -1,0 +1,82 @@
+[
+  {
+    "query_id": "Q_L3_01",
+    "text": "What minimum Charpy or Izod notched impact values at -20°C are required for PP compounds in automotive applications, and which blend compositions have demonstrated compliance?",
+    "source": "manual",
+    "knowledge_axis": "automotive_requirements",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_02",
+    "text": "What dispersed rubber phase particle size range is optimal for effective toughening in PP blends, and how does particle size distribution shift as post-consumer recycled PP content increases?",
+    "source": "manual",
+    "knowledge_axis": "morphology",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_03",
+    "text": "At what temperature do notched PP blend specimens transition from ductile to brittle fracture, and how does this ductile-to-brittle transition temperature shift as recycled PP content increases?",
+    "source": "manual",
+    "knowledge_axis": "impact_strength",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_04",
+    "text": "How does the degree of thermal-oxidative degradation in post-consumer recycled PP affect the mechanical properties of virgin-recycled PP blends, and what characterisation methods are used to assess it?",
+    "source": "manual",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_05",
+    "text": "How does the source of post-consumer recycled PP such as packaging, automotive parts, or mixed consumer streams affect the consistency and mechanical properties of virgin-recycled PP blends?",
+    "source": "manual",
+    "knowledge_axis": "recyclate_properties",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_06",
+    "text": "How does increasing post-consumer recycled PP content affect the melt flow rate of virgin-recycled PP blends, and what compounding strategies are used to compensate for MFR drift in automotive injection moulding grades?",
+    "source": "manual",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_07",
+    "text": "What impact modifier types and approximate concentrations are effective at restoring notched impact strength in PP compounds containing 30-50% post-consumer recycled PP to levels meeting automotive requirements?",
+    "source": "manual",
+    "knowledge_axis": "additives_impact_modifiers",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_08",
+    "text": "What effect does the ratio of virgin impact copolymer to virgin homopolymer PP have on the stiffness-toughness balance when a fixed proportion of post-consumer recycled PP is present in the blend?",
+    "source": "manual",
+    "knowledge_axis": "blend_ratio_mechanics",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_09",
+    "text": "How does the crystallinity and crystallisation temperature of polypropylene blends change with increasing recycled PP content, and what effect does this have on stiffness and impact performance?",
+    "source": "manual",
+    "knowledge_axis": "composition_property_data",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  },
+  {
+    "query_id": "Q_L3_10",
+    "text": "How does UV or thermal aging affect the mechanical properties and colour of PP compounds containing post-consumer recycled PP, and what stabilisation approaches are reported?",
+    "source": "manual",
+    "knowledge_axis": "stabilisers_processing",
+    "authored_before": "2026-05-17T12:00:00.000000+00:00",
+    "layer": 3
+  }
+]

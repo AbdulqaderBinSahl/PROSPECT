@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_03",
+  "layer": 3,
+  "query_text": "At what temperature do notched PP blend specimens transition from ductile to brittle fracture, and how does this ductile-to-brittle transition temperature shift as recycled PP content increases?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The ductile-to-brittle transition temperature (BDTT) of notched polypropylene (PP) blend specimens is not a single fixed value; rather, it depends heavily on the blend's composition and the inclusion of impact modifiers. For example, pure PP has been shown to have a BDTT of 90 °C, but the addition of 20 wt.% rubber shifts this transition down to 42 °C [Paper111]. In other systems, such as PP blended with polyolefin elastomers (POE), the transition temperature varies with the specific elastomer used: PP/POE 8677 exhibits a transition temperature below -45 °C, whereas PP/POE 6202 transitions at approximately -20 °C [Paper33]. \n\nRegarding the effect of recycled PP, the provided excerpts do not contain sufficient information to determine exactly how the ductile-to-brittle transition temperature shifts as the recycled PP content increases. The retrieved texts do note that incorporating post-consumer recycled PP (PPr) generally reduces the overall ductility of the blend. While a blend with 25% PPr retains a favorable balance of properties and ductility, increasing the recycled content to 100% PPr leads to severe embrittlement, characterized by an 85% reduction in elongation at break due to oxidative and thermal degradation [Paper12]. However, the specific temperature at which these recycled blends transition from ductile to brittle fracture is not documented in the provided text.\n\nTo fully answer how the ductile-to-brittle transition temperature shifts with increasing recycled PP content, additional data is needed. Specifically, results from notched impact strength tests conducted across a wide temperature range on PP blends formulated with varying, controlled weight percentages of post-consumer recycled PP would be required to map the exact shift in the transition temperature.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper111_10_1016_S0167-577X_02_01367-8",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper12_10_3390_polym17111556",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper60_10_1016_j_polymer_2018_12_011",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper12_10_3390_polym17111556",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper48_10_3390_polym13071137",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper12_10_3390_polym17111556",
+    "Paper50_10_1016_j_polymer_2020_122795",
+    "Paper12_10_3390_polym17111556",
+    "Paper111_10_1016_S0167-577X_02_01367-8",
+    "Paper88_10_1002_app_33706",
+    "Paper44_10_1002_pi_6268"
+  ]
+}

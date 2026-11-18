@@ -1,0 +1,31 @@
+{
+  "query_id": "Q024",
+  "layer": 1,
+  "query_text": "What mechanical performance requirements must polypropylene compounds meet for automotive interior and exterior applications?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The provided excerpts do not contain explicit, quantified mechanical performance requirements (such as specific numerical targets for tensile strength, flexural modulus, or melt flow rate) for polypropylene (PP) compounds in automotive applications. While [Paper146] notes that typical PP property requirements for automotive applications are detailed in a \"Table S1,\" this table is not included in the retrieved text. To fully answer the query, additional data containing specific automotive original equipment manufacturer (OEM) material specifications or the missing table would be required.\n\nHowever, the excerpts do outline several qualitative mechanical and physical performance criteria that PP compounds must meet for automotive interior and exterior parts:\n\nFirst, PP compounds must achieve a specific impact/stiffness balance [Paper146]. Because neat PP homopolymer exhibits poor toughness and brittle behavior, particularly at low temperatures [Paper38, Paper84], impact strength must be significantly improved for exterior applications such as bumpers. Bumpers are required to absorb energy and act as shields during low-speed crashes to prevent vehicle damage and pedestrian harm [Paper146]. To meet these low-temperature toughness requirements, impact modifiers like ethylene propylene rubber (EPR), ethylene propylene diene monomer (EPDM), or ethylene octene copolymer (EOC) are frequently blended into the PP matrix [Paper144, Paper227].\n\nSecond, the materials must maintain good stiffness and an acceptable elastic limit to successfully replace metal components and achieve weight savings [Paper144]. Because the addition of elastomeric impact modifiers inherently decreases the strength and stiffness of the PP blend, formulations must often incorporate rigid mineral fillers (such as talc) or glass fibers to compensate and restore the required rigidity [Paper135, Paper227]. Glass fiber reinforcement is particularly noted for interior applications like dashboard inserts, trunk trims, and seat back covers [Paper135]. \n\nFinally, alongside mechanical loads, automotive PP compounds must exhibit low density or specific gravity (for lightweighting), a low coefficient of linear thermal expansion, high chemical resistance, and high resistance to aging and weathering [Paper144, Paper146, Paper227].",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper227_10_1016_j_compositesb_2016_06_033",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper111_10_1016_S0167-577X_02_01367-8",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper146_10_3390_recycling6040076",
+    "Paper38_10_1002_app_52691",
+    "Paper146_10_3390_recycling6040076",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper135_10_1177_07316844231167552",
+    "Paper135_10_1177_07316844231167552",
+    "Paper205_10_3390_ma18051090",
+    "Paper34_10_1007_s00289-022-04187-1",
+    "Paper99_10_1002_app_24156",
+    "Paper188_10_3390_polym14173566",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper133_10_1016_j_rinma_2024_100562",
+    "Paper33_10_1007_s00289-022-04285-0",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper84_10_1007_s00289-012-0880-1"
+  ]
+}

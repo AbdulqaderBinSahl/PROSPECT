@@ -1,0 +1,31 @@
+{
+  "query_id": "Q020",
+  "layer": 1,
+  "query_text": "What baseline mechanical and rheological properties do commercial polypropylene grades (impact copolymer, homopolymer) typically exhibit?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Commercial polypropylene (PP) grades exhibit distinct baseline mechanical and rheological properties depending on whether they are homopolymers or copolymers.\n\nHomopolymer PP (often isotactic PP or iPP) is characterized by low density, high melting temperatures, and good chemical tolerance [Paper38]. Due to its relatively high crystallinity and large spherulite size, homopolymer PP generally exhibits higher tensile strength and flexural modulus than copolymerized PP [Paper87]. However, it suffers from significantly poor toughness, low elongation at break, and brittle behavior, especially at temperatures below its glass transition temperature [Paper38, Paper87]. For example, one commercial homopolymer grade (BSR I3110) exhibits a baseline Izod impact strength of 2.6 kJ/m² at 25°C and a melt flow index (MFI) of 11 g/10 min [Paper38].\n\nImpact copolymer PP (ICP) incorporates ethylene segments into the PP molecular chains, which lowers chain regularity and crystallization ability [Paper87]. While this structural change reduces tensile strength and flexural modulus relative to homopolymer PP, it significantly improves chain mobility, elongation at break, and impact strength [Paper87]. A representative commercial grade (PPC 7712) with an 11% ethylene monomer content exhibits a density of 0.905 g/cm³, a melting point of 165°C, a tensile modulus of 1200 MPa, a tensile strength at yield of 23 MPa, and a highly improved notched Charpy impact strength exceeding 40 kJ/m² at 23°C [Paper172]. Its MFI is reported as 13 g/10 min [Paper172].\n\nRheologically, the MFI of these grades is inversely related to their molecular weight. In neat PP, increasing the MFI (decreasing molecular weight) enhances chain mobility and the ability to fold into crystalline networks. This higher crystallinity increases the elastic modulus and yield stress but decreases ultimate strength, elongation at break, and fracture toughness [Paper144]. Furthermore, blending different PP grades can yield complex rheological behaviors; for instance, mixing an ICP with a high-MFI homopolymer can sometimes increase overall viscosity due to chain entanglement and interfacial tension [Paper16].\n\nWhile the provided excerpts offer specific data points for a few individual grades, they do not contain enough information to establish comprehensive baseline ranges for the mechanical and rheological properties of all commercial PP grades. To fully answer the query, additional data providing statistical averages or ranges for tensile strength, flexural modulus, impact strength, and complex viscosity across a broader spectrum of commercial homopolymer and impact copolymer grades would be needed.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper38_10_1002_app_52691",
+    "Paper102_10_1002_app_22271",
+    "Paper38_10_1002_app_52691",
+    "Paper38_10_1002_app_52691",
+    "Paper119_10_1002_1097-4628_20000815_77_7_1591__AID-APP20_3_0_CO_2-M",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper38_10_1002_app_52691",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper38_10_1002_app_52691",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper34_10_1007_s00289-022-04187-1",
+    "Paper172_10_1002_pen_21716",
+    "Paper144_10_1016_j_prostr_2022_12_017",
+    "Paper182_10_1002_app_10886",
+    "Paper123_10_30657_pea_2025_31_31",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper43_10_1080_00222348_2022_2152158",
+    "Paper16_10_1007_s00289-024-05454-z",
+    "Paper175_10_1016_j_wasman_2007_10_021"
+  ]
+}

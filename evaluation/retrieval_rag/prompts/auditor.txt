@@ -1,0 +1,43 @@
+You are auditing a draft reference answer for a Retrieval-Augmented Generation evaluation study.
+Your role is to assess quality on three dimensions and flag any problematic claims.
+
+QUERY:
+{query}
+
+RETRIEVED EXCERPTS (the only permitted source of facts):
+{context}
+
+DRAFT REFERENCE ANSWER:
+{draft}
+
+TASK:
+Score the draft on three dimensions using the 1–4 scale below, then list any flagged claims.
+
+SCORING SCALE:
+  4 — Excellent: dimension fully satisfied, no significant issues
+  3 — Good: mostly satisfied, minor gaps or imprecision
+  2 — Partial: significant issues that weaken the dimension
+  1 — Poor: dimension largely fails
+
+DIMENSIONS:
+  groundedness   — Every factual claim is traceable to the retrieved excerpts. No invented facts.
+  completeness   — The answer covers the main aspects needed to respond to the query given the excerpts.
+  coherence      — The answer is internally consistent, well-structured, and free of contradictions.
+
+OUTPUT FORMAT (strict JSON, no surrounding prose):
+{{
+  "groundedness": <1–4>,
+  "completeness": <1–4>,
+  "coherence": <1–4>,
+  "overall_triage": "<clean|minor|needs_review>",
+  "flagged_claims": [
+    "<exact quote from draft that is unsupported or incorrect>",
+    ...
+  ],
+  "auditor_notes": "<one short paragraph of overall observations, or empty string if clean>"
+}}
+
+TRIAGE RULES:
+  clean        — all three scores ≥ 3 AND no flagged claims
+  minor        — any score = 2 OR 1–2 flagged claims
+  needs_review — any score = 1 OR ≥ 3 flagged claims

@@ -1,0 +1,31 @@
+{
+  "query_id": "Q_L3_07",
+  "layer": 3,
+  "query_text": "What impact modifier types and approximate concentrations are effective at restoring notched impact strength in PP compounds containing 30-50% post-consumer recycled PP to levels meeting automotive requirements?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Based on the provided excerpts, several types of elastomeric impact modifiers are effective at improving the notched impact strength of polypropylene (PP) and recycled PP compounds. These include ethylene-propylene rubber (EPR), ethylene-propylene-diene monomer (EPDM), ethylene-octene copolymer (EOC) or rubber, propylene-octene block copolymer (POBC), and polyolefin elastomers (POE) [Paper58, Paper172, Paper227, Paper51]. Ethylene-vinyl acetate (EVA) is also noted to improve the impact strength of recycled PP, though additions of up to 9% EVA still resulted in impact strengths lower than those of virgin PP [Paper168].\n\nRegarding approximate concentrations for automotive applications, commercial formulations for car bumpers typically incorporate 10 wt% to 20 wt% of an impact modifier such as EOC, often balanced with 10 wt% mineral fillers like talc to compensate for stiffness losses (e.g., a 70/20/10 PP/EOC/Talc blend) [Paper227]. Other studies demonstrate that 5 wt% POBC [Paper58] or 20–25 wt% POE [Paper51] can significantly enhance impact resistance, and that metallocene ethylene-propylene elastomers are effective at increasing impact strength [Paper58]. \n\nHowever, the provided excerpts do not contain enough information to fully answer the query. Specifically, there is no data detailing formulations that use exactly 30–50% post-consumer recycled PP (PCR-PP) blended with virgin PP, nor the precise modifier concentrations required to restore that specific blend ratio to automotive standards. While the literature confirms that recycled PP from post-consumer containers can be modified with ethylene-octene rubber [Paper172] and that mechanical recycling degrades PP molecular weight [Paper227], the exact dosing requirements for a 30–50% PCR-PP blend are absent. \n\nTo fully address the query, additional data is needed, including: the baseline notched impact strength of the specific 30–50% PCR-PP/virgin PP blend; the exact numerical impact strength requirements for the targeted automotive components (e.g., in kJ/m² or J/m); and empirical dose-response curves for modifiers like EOC or EPDM in that specific mixed matrix to determine the exact weight percentages needed to bridge the performance gap.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper168_10_1002_app_34015",
+    "Paper58_10_1088_1757-899X_500_1_012034",
+    "Paper172_10_1002_pen_21716",
+    "Paper172_10_1002_pen_21716",
+    "Paper227_10_1016_j_compositesb_2016_06_033",
+    "Paper128_10_1016_j_istruc_2025_110571",
+    "Paper172_10_1002_pen_21716",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper170_10_1080_17480272_2011_606915",
+    "Paper227_10_1016_j_compositesb_2016_06_033",
+    "Paper168_10_1002_app_34015",
+    "Paper197_10_1108_PRT-07-2016-0075",
+    "Paper157_10_1016_j_polymer_2016_07_069",
+    "Paper195_10_1016_j_jclepro_2015_12_062",
+    "Paper172_10_1002_pen_21716",
+    "Paper51_10_1016_j_compscitech_2020_108148",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper60_10_1016_j_polymer_2018_12_011",
+    "Paper169_10_1177_0731684412438793",
+    "Paper58_10_1088_1757-899X_500_1_012034"
+  ]
+}

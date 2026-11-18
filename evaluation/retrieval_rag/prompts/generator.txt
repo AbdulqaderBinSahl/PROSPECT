@@ -1,0 +1,15 @@
+{role}
+
+Answer the following question based ONLY on the provided research evidence. Follow these rules:
+- Cite every specific claim using the retrieval number in brackets, e.g. [1], [3], [7]. These are the numbers at the start of each Retrieved Evidence block. Only use numbers that appear in the evidence — do not invent citations.
+- Where numerical values are available ({key_quantities}), state them directly with units.
+- If the evidence is insufficient to answer, say so explicitly rather than speculating.
+- End your response with a "## References" section listing each cited paper once (deduplicated), in the format:
+  [Paper###] Full title — cited as [N], [M], ...
+
+Question: {query}
+
+Retrieved Evidence:
+{context}
+
+Answer:

@@ -1,0 +1,31 @@
+{
+  "query_id": "Q002",
+  "layer": 1,
+  "query_text": "What tensile properties (strength, modulus, elongation) are reported for blends of virgin and recycled polypropylene at different mixing ratios?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The tensile properties of virgin polypropylene (vPP) and recycled polypropylene (rPP) blends vary significantly depending on the mixing ratio, with higher recycled content generally leading to reduced stiffness, strength, and ductility due to polymer chain degradation and chain scission [Paper12, Paper106].\n\nAt 100% virgin PP, the material exhibits maximum mechanical integrity, with reported values including an elastic modulus of approximately 1378 MPa, an ultimate tensile strength of 22.80 MPa, and an elongation at break of 293.86% [Paper12]. Conversely, 100% rPP demonstrates severe embrittlement, showing a 29% decline in elastic modulus (984 MPa), a 63% reduction in break strength (3.30 MPa), and an 85% reduction in elongation at break (109.79%) compared to virgin PP [Paper12]. Another study notes that PP recycled four times retains only 58% of its original tensile strength [Paper106].\n\nBlending vPP with rPP can mitigate these losses. A 25% rPP to 75% vPP ratio is frequently reported as an optimal balance. At this ratio, the blend retains 96% of the virgin elastic modulus (1315.45 MPa) and slightly improves yield strength to 101% (37.16 MPa) of the virgin material, alongside an elongation at break of 233.07% [Paper12]. Other researchers confirm that incorporating 25% to 40% rPP yields tensile strength and modulus values comparable to pure PP, with only slight reductions or even minor increases in elongation at break [Paper12]. At a 50/50 mixing ratio, the addition of virgin PP to recycled PP increases tensile strength by 18% to 20% and stiffness/modulus by 20% to 21% relative to 100% recycled PP [Paper12, Paper56].\n\nRegarding predictability, the elastic modulus of vPP/rPP blends generally follows the Law of Mixtures, allowing for linear, predictable property evolution across blend ratios [Paper12]. However, ultimate tensile strength and elongation at break display non-linear trends [Paper12]. Furthermore, experimental tensile strength retention in physical blends can fall 5% to 10% below theoretical additive models because radicals and hydroperoxides in the recycled material can degrade the virgin polymer chains [Paper106].\n\nWhile the provided excerpts detail the tensile properties of general vPP and rPP blends, they lack specific data distinguishing the effects of blending virgin impact copolymer PP versus virgin homopolymer PP with post-consumer recycled PP. Additionally, the excerpts do not provide quantitative data on how specific additives (such as impact modifiers, compatibilisers, or fillers) alter the tensile properties of these blends. Additional literature addressing these specific polymer grades and additive interactions is required to fully inform the advisory system's formulation targets.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper159_10_1002_vnl_21390",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper106_10_1002_app_20357",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper12_10_3390_polym17111556",
+    "Paper106_10_1002_app_20357",
+    "Paper146_10_3390_recycling6040076",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper102_10_1002_app_22271",
+    "Paper85_10_1016_j_polymdegradstab_2012_05_005",
+    "Paper152_10_3390_recycling4030033",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper166_10_1177_147776061202800404",
+    "Paper12_10_3390_polym17111556",
+    "Paper48_10_3390_polym13071137",
+    "Paper147_10_3390_recycling6030051"
+  ]
+}

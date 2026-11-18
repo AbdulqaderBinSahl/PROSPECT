@@ -1,0 +1,13 @@
+# PROSPECT — Step 1 (corpus discovery) and Step 2 (filtering)
+# Tested with Python 3.12 and the lower-bound versions below.
+
+openai>=2.7,<3              # OpenAI-compatible chat client (local server or cloud API)
+langchain-openai>=1.0,<2    # chat client used by the Step 2 agents
+langchain-core>=1.0,<2
+pydantic>=2.12,<3           # schemas for every LLM response
+pymupdf>=1.26,<2            # PDF text extraction
+pandas>=2.3,<3              # Excel summary of A3/A3w/A4 runs
+openpyxl>=3.1,<4
+requests>=2.32,<3           # Scopus APIs (Step 1), watchdog health checks
+python-dotenv>=1.2,<2       # loads .env
+tqdm>=4.67

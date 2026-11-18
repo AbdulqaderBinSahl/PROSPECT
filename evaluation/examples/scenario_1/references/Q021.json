@@ -1,0 +1,31 @@
+{
+  "query_id": "Q021",
+  "layer": 1,
+  "query_text": "How does contamination from polyethylene or other polymers in post-consumer recycled PP streams affect blend properties?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "Contamination from polyethylene (PE) and other polymers in post-consumer recycled polypropylene (PCR-PP) streams significantly alters the mechanical and rheological properties of polymer blends. Because PP and PE have different molecular structures and crystallization behaviors, they are highly immiscible [Paper202]. This incompatibility results in heterogeneous, macrophase-separated blends where the foreign polymer phases act as stress concentrators [Paper23, Paper223]. Consequently, even small amounts of PE contamination can degrade the recycled PP by reducing overall mechanical strength, altering crystallinity, increasing anisotropy, and causing density bias [Paper202, Paper223]. Most notably, PE contamination adversely affects ductility and impact resistance, often inducing a transition from ductile to brittle fracture behavior and lowering ultimate elongation [Paper44, Paper223].\n\nOther polymer contaminants, such as polyethylene terephthalate (PET), polylactic acid (PLA), polycarbonate (PC), acrylonitrile butadiene styrene (ABS), and polystyrene (PS), are also immiscible in PP and affect blend properties in distinct ways [Paper209]:\n* PET: A contamination level of just 3% can increase stiffness by 15% but simultaneously drops elongation at break by 6.8% and Charpy impact strength by 9%. It also significantly increases melt viscosity [Paper209].\n* PLA: Low concentrations (3%) reduce tensile strength, impact strength, and melt flowability, while higher concentrations (10%) significantly alter stiffness [Paper209].\n* PC: While it can act as a dispersed reinforcing phase that maintains stiffness, it decreases toughness and elongation at break in parts containing weld lines [Paper209].\n* PS and ABS: These do not significantly impact the tensile modulus, though their presence generally affects overall tensile strength [Paper209].\n\nTo mitigate the suboptimal mechanical performance caused by polymer cross-contamination, the addition of compatibilizers is often required. Additives such as elastomeric copolymers (e.g., ethylene propylene rubber), styrenic block copolymers, and maleic anhydride-grafted polymers are used to improve interfacial adhesion, thereby enhancing elongation at break and impact resistance [Paper23, Paper44, Paper89, Paper209].\n\nWhile the provided excerpts detail the effects of various contaminants on PP, they do not contain enough information to fully answer how these contaminated PCR-PP streams specifically interact with virgin impact copolymer PP and virgin homopolymer PP in ternary blends. Additional data detailing the exact quantitative relationships between specific virgin/PCR-PP blend ratios, known contaminant concentrations, and the precise dosing of impact modifiers, stabilisers, and fillers would be required to suggest optimal formulations for target mechanical performance.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper202_10_1002_pen_70353",
+    "Paper207_10_3390_polym16223169",
+    "Paper223_10_3390_polym13101574",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper44_10_1002_pi_6268",
+    "Paper12_10_3390_polym17111556",
+    "Paper202_10_1002_pen_70353",
+    "Paper209_10_3390_polym16162301",
+    "Paper223_10_3390_polym13101574",
+    "Paper12_10_3390_polym17111556",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper23_10_1021_acsapm_4c02270",
+    "Paper223_10_3390_polym13101574",
+    "Paper209_10_3390_polym16162301",
+    "Paper142_10_3390_recycling8040062",
+    "Paper209_10_3390_polym16162301",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper209_10_3390_polym16162301",
+    "Paper106_10_1002_app_20357"
+  ]
+}

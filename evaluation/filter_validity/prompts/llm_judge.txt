@@ -1,0 +1,29 @@
+You are evaluating whether a scientific paper should be included in a curated corpus for a specific application. Your judgment will serve as ground truth for evaluating an automated filtering pipeline.
+
+APPLICATION CONTEXT:
+{{ application_description }}
+
+{% if example_questions %}(For concrete reference, examples of the kinds of questions a user of this corpus might ask include: {{ example_questions }}.)
+
+{% endif %}PAPER TO EVALUATE:
+{{ paper_text }}
+
+YOUR TASK:
+Assign a score from 1 to 4 indicating the paper's likely usefulness for this application:
+
+  4 — Highly valuable. Direct experimental data on the application area ({{ core_area }}), or methodology directly applicable. Definitely include.
+  3 — Useful. Adjacent polymer or related processing; useful background or transferable methodology. Probably include.
+  2 — Marginal. Loosely related; tangential or weakly applicable. Probably exclude.
+  1 — Not relevant. Wrong polymer, wrong application area, or no usable content. Definitely exclude.
+
+REQUIRED OUTPUT (JSON):
+{
+  "score": <integer, 1-4>,
+  "confidence": "<low | medium | high>",
+  "rationale": "<1-2 sentences citing specific content from the paper that justifies the score>"
+}
+
+GROUNDING REQUIREMENT:
+Your rationale must reference at least one concrete element of either (a) the paper's content (a specific finding, dataset, methodology) or (b) the application context. Generic phrases like "this is a useful paper" are not acceptable.
+
+Output the JSON object only. No surrounding prose.

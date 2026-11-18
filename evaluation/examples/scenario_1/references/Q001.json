@@ -1,0 +1,31 @@
+{
+  "query_id": "Q001",
+  "layer": 1,
+  "query_text": "How does the impact strength of polypropylene blends change with increasing recycled PP content?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The impact strength and overall toughness of polypropylene (PP) blends generally decrease as the content of post-consumer recycled PP (rPP) increases, particularly at higher concentrations. Research indicates that while low proportions of rPP (e.g., 10%) have a minimal effect on impact resistance and crack growth, higher proportions lead to a notable decline in impact performance [Paper12]. At 100% recycled content, the material suffers from severe embrittlement, characterized by a drastic reduction in ductility and elongation at break [Paper12].\n\nThis deterioration in impact strength is primarily driven by the degradation the recycled polymer underwent during its previous lifecycle and reprocessing. Factors such as thermal, mechanical, and thermo-oxidative degradation, as well as UV exposure, lead to chain scission and a reduction in molecular weight, which inherently lowers the material's toughness [Paper12, Paper159]. Furthermore, the number of recycling steps a polymer undergoes has been shown to progressively decrease its fracture toughness [Paper121]. The presence of contaminants and cross-polymer contamination (such as polyethylene mixed into rPP) also introduces inhomogeneities that act as stress concentrators, further reducing impact performance [Paper12, Paper223].\n\nDespite the general trend of embrittlement, low-to-moderate incorporation rates can be viable. Blends containing up to 25% rPP have been identified as offering a favorable balance of mechanical properties without severely compromising performance [Paper12]. Conversely, isolated studies report specific instances where blending with recycled flakes increased tensile impact strength [Paper48] or where recycled PP exhibited increased impact strength compared to highly filled systems [Paper172], though these appear highly dependent on the specific blend architecture and processing history.\n\nWhile the provided excerpts establish the general inverse relationship between rPP content and impact strength, they lack comprehensive, quantified data across a continuous range of blend ratios. To fully answer how impact strength changes for precise formulation tuning, additional data providing exact impact strength measurements (e.g., Charpy or Izod values in kJ/m²) across incremental rPP ratios (e.g., 10% to 90%) would be required. Furthermore, data detailing how specific additives, such as impact modifiers or compatibilizers, mitigate this loss of impact strength in high-rPP blends is needed to fully optimize these formulations.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper48_10_3390_polym13071137",
+    "Paper172_10_1002_pen_21716",
+    "Paper223_10_3390_polym13101574",
+    "Paper12_10_3390_polym17111556",
+    "Paper106_10_1002_app_20357",
+    "Paper87_10_1080_00222348_2011_583798",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper159_10_1002_vnl_21390",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper78_10_1080_00222348_2013_861297",
+    "Paper50_10_1016_j_polymer_2020_122795",
+    "Paper3_10_1016_j_rineng_2025_108360",
+    "Paper66_10_3390_app7121254",
+    "Paper58_10_1088_1757-899X_500_1_012034",
+    "Paper121_10_1080_15376494_2024_2438902",
+    "Paper36_10_1021_acsapm_2c01221",
+    "Paper16_10_1007_s00289-024-05454-z"
+  ]
+}

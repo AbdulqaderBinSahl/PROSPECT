@@ -1,0 +1,31 @@
+{
+  "query_id": "Q008",
+  "layer": 1,
+  "query_text": "How do the properties of virgin-recycled PP blends compare to those of pure virgin polypropylene?",
+  "drafter_model": "gemini-pro-latest",
+  "k": 20,
+  "draft": "The properties of virgin-recycled polypropylene (PP) blends generally exhibit intermediate performance characteristics compared to pure virgin PP, heavily influenced by the proportion and degradation history of the recycled content.\n\nMechanically, pure virgin PP typically possesses higher tensile strength, elastic modulus, and elongation at break due to its higher molecular weight and lack of thermo-mechanical degradation [Paper56, Paper146]. Incorporating low to moderate amounts of recycled PP (rPP)—such as a 25% rPP blend—yields tensile strength and modulus values comparable to pure virgin PP, with only slight reductions in elongation at break [Paper12]. However, higher proportions of rPP lead to severe embrittlement, significantly reducing ductility, impact resistance, and slow crack growth performance [Paper12]. While blending virgin PP into rPP improves overall mechanical properties [Paper56], the tensile strength retention of these blends can be 5–10% lower than theoretical additive models predict. This deviation occurs because radicals and hydroperoxides present in the recycled material can induce degradation in the virgin polymer chains [Paper106].\n\nRheologically, the melt flow index (MFI) of virgin-recycled blends typically follows the Law of Mixtures, allowing for predictable adjustments based on blend ratios [Paper12]. The specific impact on MFI depends on the source materials; rPP often exhibits a higher MFI than virgin PP due to chain scission from prior processing [Paper146], though specific industrial grades of virgin PP may be selected with intentionally higher MFI to improve the blend's processability [Paper56].\n\nThermally, the addition of rPP tends to increase the crystallization temperature of the blend, suggesting a higher proportion of shorter polymeric chains [Paper126]. While a 25% rPP blend can offer improved crystallinity and thermal stability, higher recycled content significantly diminishes the blend's oxidation resistance [Paper12]. Conversely, if the rPP contains residual inorganic fillers, the thermal stability of the resulting blend may actually surpass that of pure virgin PP [Paper56].\n\nWhile the provided excerpts detail the general behavior of virgin-recycled PP blends, they do not contain enough information to fully answer the query within the context of the advisory system. Specifically, the retrieved data does not distinguish between the blending behaviors of virgin impact copolymer PP versus virgin homopolymer PP. Furthermore, the excerpts lack explicit formulation ratios required to meet specific target mechanical thresholds, and they do not provide guidelines on when specific additives (such as impact modifiers, compatibilisers, or stabilisers) must be introduced to correct performance deficits. Additional empirical data on copolymer-specific interactions and additive dosing rules would be needed to fully support the formulation system.",
+  "n_chunks": 20,
+  "chunk_ids": [
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper12_10_3390_polym17111556",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper126_10_1016_j_polymdegradstab_2025_111249",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper106_10_1002_app_20357",
+    "Paper80_10_4028_www_scientific_net_KEM_594-595_837",
+    "Paper48_10_3390_polym13071137",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper146_10_3390_recycling6040076",
+    "Paper14_10_1007_s13726-024-01369-8",
+    "Paper127_10_1002_pc_27663",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper89_10_1016_j_matdes_2009_07_031",
+    "Paper56_10_1007_s10973-019-08824-2",
+    "Paper147_10_3390_recycling6030051",
+    "Paper12_10_3390_polym17111556"
+  ]
+}

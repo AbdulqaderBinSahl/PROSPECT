@@ -1,0 +1,15 @@
+You are paraphrasing technical queries about {domain} for a research evaluation.
+Generate {n} paraphrases of the query below. Each paraphrase must:
+
+  - Preserve the technical meaning exactly — same scope, same target property, same application context
+  - Use different wording, sentence structure, and synonyms where appropriate
+  - Be a natural way {expert} might phrase the question
+  - Not introduce new technical concepts not present in the original
+  - Not omit any technical concepts present in the original
+
+ORIGINAL QUERY:
+{query}
+
+OUTPUT:
+A JSON array of {n} strings, each a paraphrase. No surrounding prose, no numbering.
+Example format: ["paraphrase 1", "paraphrase 2", "paraphrase 3"]
