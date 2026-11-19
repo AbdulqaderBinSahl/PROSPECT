@@ -5,6 +5,7 @@ Application: an LLM advisory system for formulating polypropylene compounds that
 | File | What |
 |---|---|
 | `settings.yaml` | The paper's evaluation settings: models, prompt values, sample sizes, seeds, contrasts |
+| `corpus_papers.csv` | The 212 papers of the corpus: paper ID (the PDF filename), DOI, year, journal and title, from the Scopus metadata. Save each PDF as `<paper_id>.pdf` to rebuild the corpus |
 | `application_description.txt` | The application text every rater saw (Step 2 panel) |
 | `sample_locked.json` | The IDs of the 101 papers rated by the panel (seed 42, locked before rating); which conditions kept each paper is not included |
 | `human_rubric.md` | Instructions given to the two human raters (anonymised as H1 and H2) |
